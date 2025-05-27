@@ -1,0 +1,27 @@
+:root {
+  --primary-colour: black;
+  --secondary-colour: ;
+  --tertiary-colour: ;
+  --main-text: black;
+  --secondary-text: ;
+}
+
+body section {
+  padding: 50px 50px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-text);
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+title {
+  display: none;
+}

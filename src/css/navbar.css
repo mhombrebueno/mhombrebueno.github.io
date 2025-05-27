@@ -1,0 +1,28 @@
+#navbar {
+  height: 80px;
+  width: 100%;
+
+  padding: 0px 50px;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: solid 2px;
+}
+
+#nav-buttons {
+  flex-direction: row;
+  font-size: 20px;
+  font-weight: bold;
+
+  gap: 50px;
+}
+
+#nav-buttons a {
+  text-decoration: none;
+}
+
+#nav-buttons a:hover {
+  text-decoration: underline;
+}
