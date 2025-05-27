@@ -7,15 +7,20 @@
   <meta name="viewport" content="width=device-width" />
   <meta name="author" content="Jayden Hutchinson" />
 
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/section.css" />
+  <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/profile.css" />
+  <link rel="stylesheet" href="css/rates.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/reviews.css" />
+  <link rel="stylesheet" href="css/certifications.css" />
 </head>
 <body>
   <div id="navbar">
     <div>
       <h1>Pivot Fitness</h1>
     </div>
+
     <div id="nav-buttons">
       <a href="">Home</a>
       <a href="">Profile</a>
@@ -25,24 +30,46 @@
     </div>
   </div>
 
-  <section id="profile"></section>
+  <section id="profile">
+    <h1>Profile</h1>
+  </section>
 
   <section id="certifications">
-    <div class="certificate">
-      <img src="assets/imgs/certified-personal-trainer.jpg" />
-      <button>View</button>
+    <h1>Certifications</h1>
 
-      <div class="modal">
-        <div class="content">
-          <span class="close" id="closeModalBtn">&times;</span>
-          <h2>Modal Title</h2>
-          <p>This is a simple modal popup example.</p>
+    <div class="content">
+      <!-- Certified Personal Trainer -->
+      <div class="certificate">
+        <img src="assets/imgs/certified-personal-trainer.jpg" />
+        <button>View</button>
+        <div class="modal">
+          <div class="content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>Modal Title</h2>
+            <p>This is a simple modal popup example.</p>
+          </div>
         </div>
+      </div>
+
+      <div class="certificate">
+        <img src="assets/imgs/certified-personal-trainer.jpg" />
+      </div>
+
+      <div class="certificate">
+        <img src="assets/imgs/certified-personal-trainer.jpg" />
       </div>
     </div>
   </section>
 
-  <section id="reviews"></section>
-  <section id="training-rates"></section>
-  <section id="contact"></section>
+  <section id="reviews">
+    <h1>Reviews</h1>
+  </section>
+
+  <section id="rates">
+    <h1>Rates</h1>
+  </section>
+
+  <section id="contact">
+    <h1>Contact</h1>
+  </section>
 </body>
