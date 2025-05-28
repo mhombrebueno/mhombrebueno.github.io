@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width" />
   <meta name="author" content="Jayden Hutchinson" />
 
+  <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/default.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/profile.css" />
   <link rel="stylesheet" href="css/rates.css" />
   <link rel="stylesheet" href="css/contact.css" />
   <link rel="stylesheet" href="css/reviews.css" />
-  <link rel="stylesheet" href="css/certifications.css" />
+  <link rel="stylesheet" href="css/Certificates.css" />
 </head>
 <body>
   <div id="navbar">
@@ -22,11 +23,10 @@
     </div>
 
     <div id="nav-buttons">
-      <a href="">Home</a>
-      <a href="">Profile</a>
-      <a href="">Reviews</a>
-      <a href="">Rates</a>
-      <a href="">Contact</a>
+      <a href="#profile">Profile</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#rates">Rates</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 
@@ -34,13 +34,16 @@
     <h1>Profile</h1>
   </section>
 
-  <section id="certifications">
-    <h1>Certifications</h1>
+  <section id="certificates">
+    <h1>Certificates</h1>
 
     <div class="content">
       <!-- Certified Personal Trainer -->
       <div class="certificate">
-        <img src="assets/imgs/certified-personal-trainer.jpg" />
+        <img
+          alt="Personal Trainer Certificate"
+          src="assets/imgs/certificates/personal-trainer-certificate.jpg"
+        />
         <button>View</button>
         <div class="modal">
           <div class="content">
@@ -52,11 +55,17 @@
       </div>
 
       <div class="certificate">
-        <img src="assets/imgs/certified-personal-trainer.jpg" />
+        <img
+          alt="Certified Personal Trainer"
+          src="assets/imgs/certificates/certified-personal-trainer.jpg"
+        />
       </div>
 
       <div class="certificate">
-        <img src="assets/imgs/certified-personal-trainer.jpg" />
+        <img
+          alt="Certified Nutrition Coach"
+          src="assets/imgs/certificates/certified-nutrition-coach.jpg"
+        />
       </div>
     </div>
   </section>
@@ -67,6 +76,43 @@
 
   <section id="rates">
     <h1>Rates</h1>
+    <div class="content">
+      <!-- GOLD -->
+
+      <div id="gold" class="rate-card">
+        <h1 class="rate-title">Gold</h1>
+        <img alt="Gold" src="assets/imgs/ranks/gold-rank.webp" />
+        <ul>
+          <li>One time purchase</li>
+          <li>Muscle Gain Sheet</li>
+          <li>Weight Loss Sheet</li>
+          <li>Multi Week Routine</li>
+          <li>Basic formulas for musscle gain/loss</li>
+        </ul>
+        <p>Description</p>
+      </div>
+
+      <!-- PLATINUM -->
+
+      <div id="platinum" class="rate-card">
+        <h1 class="rate-title">Platinum</h1>
+        <img alt="Platinum" src="assets/imgs/ranks/plat-rank.webp" />
+      </div>
+
+      <!-- DIAMOND -->
+
+      <div id="diamond" class="rate-card">
+        <h1 class="rate-title">Diamond</h1>
+        <img alt="Diamond" src="assets/imgs/ranks/diamond-rank.webp" />
+      </div>
+
+      <!-- MASTER -->
+
+      <div id="master" class="rate-card">
+        <h1 class="rate-title">Master</h1>
+        <img alt="Master" src="assets/imgs/ranks/master-rank.webp" />
+      </div>
+    </div>
   </section>
 
   <section id="contact">

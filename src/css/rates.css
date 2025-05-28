@@ -1,5 +1,65 @@
 #rates {
   height: 100vh;
+}
 
-  background-color: #ffffde;
+#rates .content {
+  flex-direction: row;
+
+  width: 100%;
+  height: 100%;
+
+  justify-content: space-evenly;
+}
+
+.rate-card {
+  width: 20%;
+  height: 600px;
+
+  position: relative;
+
+  padding: 0px 20px;
+
+  border: 1px solid;
+}
+
+.rate-card ul li {
+  list-style-type: square;
+}
+
+.rate-card img {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+
+  width: 100px;
+  height: auto;
+}
+
+.rate-title {
+  padding-top: 10px;
+
+  font-size: 52px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: -2px 2px 5px #363636;
+}
+
+#gold {
+  background-image: linear-gradient(white, var(--gold));
+  border-image: linear-gradient(var(--gold), white) 1;
+}
+
+#platinum {
+  background-image: linear-gradient(white, var(--platinum));
+  border-image: linear-gradient(var(--platinum), white) 1;
+}
+
+#diamond {
+  background-image: linear-gradient(white, var(--diamond));
+  border-image: linear-gradient(var(--diamond), white) 1;
+}
+
+#master {
+  background-image: linear-gradient(white, var(--master));
+  border-image: linear-gradient(var(--master), white) 1;
 }

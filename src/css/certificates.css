@@ -1,10 +1,10 @@
-#certifications {
-  background-color: #deffe7;
+#certificates {
+  background-color: grey;
 }
 
-#certifications .content {
+#certificates .content {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .certificate {
