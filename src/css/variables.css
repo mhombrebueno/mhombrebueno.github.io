@@ -1,0 +1,15 @@
+:root {
+  /* COLOURS */
+  --primary-colour: black;
+  --secondary-colour: ;
+  --tertiary-colour: ;
+  --main-text: black;
+  --secondary-text: ;
+  --gold: #f0c57f;
+  --platinum: #abffe3;
+  --diamond: #abcaff;
+  --master: #f8abff;
+
+  /* DIMENSIONS */
+  --navbar-height: 80px;
+}
