@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "atkinson";
+  src: url(../assets/fonts/Atkinson/AtkinsonHyperlegibleNext-VariableFont_wght.ttf);
+}
+
 #rates {
   height: 100vh;
 }
@@ -12,54 +17,55 @@
 }
 
 .rate-card {
+  position: relative;
   width: 20%;
   height: 600px;
 
-  position: relative;
+  padding: 0 20px;
 
-  padding: 0px 20px;
-
-  border: 1px solid;
-}
-
-.rate-card ul li {
-  list-style-type: square;
+  border: 3px solid;
 }
 
 .rate-card img {
   position: absolute;
-  top: 10px;
-  right: 30px;
-
-  width: 100px;
+  width: 80%;
   height: auto;
+
+  top: 0;
+  right: 0;
+
+  opacity: 0.4;
 }
 
 .rate-title {
-  padding-top: 10px;
+  width: 100%;
+  z-index: 1;
 
-  font-size: 52px;
+  margin-top: 2rem;
+
+  font-family: "atkinson";
+  font-size: 3.8vw;
   font-weight: bolder;
   color: white;
-  text-shadow: -2px 2px 5px #363636;
+  text-shadow: -4px 5px 10px #0000005f;
 }
 
 #gold {
-  background-image: linear-gradient(white, var(--gold));
-  border-image: linear-gradient(var(--gold), white) 1;
+  border-color: var(--gold);
+  background-image: linear-gradient(var(--gold), white);
 }
 
 #platinum {
-  background-image: linear-gradient(white, var(--platinum));
-  border-image: linear-gradient(var(--platinum), white) 1;
+  border-color: var(--platinum);
+  background-image: linear-gradient(var(--platinum), white);
 }
 
 #diamond {
-  background-image: linear-gradient(white, var(--diamond));
-  border-image: linear-gradient(var(--diamond), white) 1;
+  border-color: var(--diamond);
+  background-image: linear-gradient(var(--diamond), white);
 }
 
 #master {
-  background-image: linear-gradient(white, var(--master));
-  border-image: linear-gradient(var(--master), white) 1;
+  border-color: var(--master);
+  background-image: linear-gradient(var(--master), white);
 }

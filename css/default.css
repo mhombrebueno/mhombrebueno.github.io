@@ -26,3 +26,7 @@ section h1 {
   font-size: 48px;
   margin-bottom: 4rem;
 }
+
+ul {
+  list-style-type: circle;
+}
