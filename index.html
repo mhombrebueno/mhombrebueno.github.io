@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width" />
   <meta name="author" content="Jayden Hutchinson" />
 
-  <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/profile.css" />
-  <link rel="stylesheet" href="css/rates.css" />
+  <link rel="stylesheet" href="css/packages.css" />
   <link rel="stylesheet" href="css/contact.css" />
   <link rel="stylesheet" href="css/reviews.css" />
   <link rel="stylesheet" href="css/certificates.css" />
@@ -25,71 +25,28 @@
     <div id="nav-buttons">
       <a href="#profile">Profile</a>
       <a href="#reviews">Reviews</a>
-      <a href="#rates">Rates</a>
+      <a href="#packages">Packages</a>
       <a href="#contact">Contact</a>
+      <a href="#certificates">Certifications</a>
     </div>
   </div>
 
   <section id="profile">
-    <h1>Profile</h1>
-  </section>
-
-  <section id="certificates">
-    <h1>Certificates</h1>
-
-    <div class="content">
-      <!-- Certified Personal Trainer -->
-      <div class="certificate">
-        <img
-          alt="Personal Trainer Certificate"
-          src="assets/imgs/certificates/personal-trainer-certificate.jpg"
-        />
-        <button>View</button>
-        <div class="modal">
-          <div class="content">
-            <span class="close" id="closeModalBtn">&times;</span>
-            <h2>Modal Title</h2>
-            <p>This is a simple modal popup example.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="certificate">
-        <img
-          alt="Certified Personal Trainer"
-          src="assets/imgs/certificates/certified-personal-trainer.jpg"
-        />
-      </div>
-
-      <div class="certificate">
-        <img
-          alt="Certified Nutrition Coach"
-          src="assets/imgs/certificates/certified-nutrition-coach.jpg"
-        />
-      </div>
-    </div>
+    <h1 class="section-heading">Profile</h1>
   </section>
 
   <section id="reviews">
-    <h1>Reviews</h1>
+    <h1 class="section-heading">Reviews</h1>
   </section>
 
-  <section id="rates">
-    <h1>Rates</h1>
+  <section id="packages">
+    <h1 class="section-heading">Packages</h1>
     <div class="content">
       <!-- GOLD -->
 
       <div id="gold" class="rate-card">
         <h1 class="rate-title">Gold</h1>
         <img alt="Gold" src="assets/imgs/ranks/gold-rank.webp" />
-        <ul>
-          <li>One time purchase</li>
-          <li>Muscle Gain Sheet</li>
-          <li>Weight Loss Sheet</li>
-          <li>Multi Week Routine</li>
-          <li>Basic formulas for musscle gain/loss</li>
-        </ul>
-        <p>Description</p>
       </div>
 
       <!-- PLATINUM -->
@@ -116,6 +73,46 @@
   </section>
 
   <section id="contact">
-    <h1>Contact</h1>
+    <h1 class="section-heading">Contact</h1>
+  </section>
+
+  <section id="certificates">
+    <h1 class="section-heading">Certifications</h1>
+
+    <div class="content">
+      <!-- Certified Personal Trainer -->
+      <div class="certificate">
+        <h1>Stretching & Flexibility Coach</h1>
+        <img
+          alt="Personal Trainer Certificate"
+          src="assets/imgs/certificates/stretch-flexibility-coach.jpg"
+        />
+
+        <!-- <button>View</button>
+        <div class="modal">
+          <div class="content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>Modal Title</h2>
+            <p>This is a simple modal popup example.</p>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="certificate">
+        <h1>Certified Personal Trainer</h1>
+        <img
+          alt="Certified Personal Trainer"
+          src="assets/imgs/certificates/certified-personal-trainer.jpg"
+        />
+      </div>
+
+      <div class="certificate">
+        <h1>Certified Nutrition Coach</h1>
+        <img
+          alt="Certified Nutrition Coach"
+          src="assets/imgs/certificates/certified-nutrition-coach.jpg"
+        />
+      </div>
+    </div>
   </section>
 </body>
