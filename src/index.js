@@ -1,13 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// React
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// CSS
+import "./index.css";
+import "./variables.css";
+
+// Components
+import Navbar from "./Navbar";
+import Profile from "./Profile";
+import Reviews from "./Reviews";
+import Packages from "./Packages";
+import Contact from "./Contact";
+import Certification from "./Certification";
+
+import reportWebVitals from "./reportWebVitals";
+import { BUSINESS_NAME } from "./Variables";
+
+document.title = BUSINESS_NAME;
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Navbar />
+    <Profile />
+    <Reviews />
+    <Packages />
+    <Contact />
+    <Certification />
   </React.StrictMode>
 );
 
