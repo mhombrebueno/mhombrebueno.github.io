@@ -1,35 +1,28 @@
 import "./Certification.css";
 
+import Certificate from "./Certificate";
+
 function Certification() {
   return (
     <section id="certification">
-      <h1 class="section-heading">Certification</h1>
-      <Certificate title="" img="" />
-
-      <div class="content">
-        <div class="certificate">
-          <h1>Stretching & Flexibility Coach</h1>
-          <img
-            alt="Personal Trainer Certificate"
-            src="imgs/certification/stretch-flexibility-coach.jpg"
-          />
-        </div>
-
-        <div class="certificate">
-          <h1>Certified Personal Trainer</h1>
-          <img
-            alt="Certified Personal Trainer"
-            src="imgs/certification/certified-personal-trainer.jpg"
-          />
-        </div>
-
-        <div class="certificate">
-          <h1>Certified Nutrition Coach</h1>
-          <img
-            alt="Certified Nutrition Coach"
-            src="imgs/certification/certified-nutrition-coach.jpg"
-          />
-        </div>
+      <h1 className="section-heading">Certification</h1>
+      <div className="content">
+        <Certificate
+          title="Kinesiology"
+          img="/imgs/certification/certified-personal-trainer.jpg"
+        />
+        <Certificate
+          title="Certified Personal Trainer"
+          img="/imgs/certification/certified-personal-trainer.jpg"
+        />
+        <Certificate
+          title="Certified Nutrition Coach"
+          img="/imgs/certification/certified-nutrition-coach.jpg"
+        />
+        <Certificate
+          title="Stretching & Flexibilty Coach"
+          img="/imgs/certification/stretch-flexibility-coach.jpg"
+        />
       </div>
     </section>
   );

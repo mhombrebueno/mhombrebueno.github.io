@@ -11,6 +11,7 @@ function Packages() {
         <PackageCard title="diamond" symbol="/imgs/ranks/diamond-rank.webp" />
         <PackageCard title="master" symbol="/imgs/ranks/master-rank.webp" />
       </div>
+      <h2>Add Ons</h2>
     </section>
   );
 }
