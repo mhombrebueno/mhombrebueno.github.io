@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "atkinson";
+  src: url(/public/fonts/Atkinson/AtkinsonHyperlegibleNext-VariableFont_wght.ttf);
+}
+
+#packages {
+  height: fit-content;
+  background-color: var(--secondary-colour);
+}
+
+#packages .content {
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 100%;
+
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 0 50px;
+}
+
+.package {
+  position: relative;
+  width: 350px;
+  height: 600px;
+
+  padding: 200px 0 0 20px;
+
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.package img {
+  position: absolute;
+  width: 235px;
+  height: auto;
+
+  top: 0;
+
+  opacity: 0.5;
+}
+
+.package h1 {
+  font-family: "atkinson";
+  font-size: 64px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+
+#gold {
+  border-color: var(--gold);
+  background-color: var(--gold);
+  background-image: linear-gradient(var(--gold), #634524);
+}
+
+#platinum {
+  border-color: var(--platinum);
+  background-image: linear-gradient(var(--platinum), #1e4f4e);
+}
+
+#diamond {
+  border-color: var(--diamond);
+  background-image: linear-gradient(var(--diamond), #1e344f);
+}
+
+#master {
+  border-color: var(--master);
+  background-image: linear-gradient(var(--master), #411e4f);
+}
