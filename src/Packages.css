@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "atkinson";
-  src: url(/public/fonts/Atkinson/AtkinsonHyperlegibleNext-VariableFont_wght.ttf);
+  font-family: "cinzel";
+  src: url(/public/fonts/Cinzel/Cinzel-VariableFont_wght.ttf);
 }
 
 #packages {
@@ -25,39 +25,59 @@
   width: 350px;
   height: 600px;
 
-  padding: 200px 0 0 20px;
-
   border: 2px solid;
   border-radius: 15px;
 }
 
+.package * {
+  font-family: "cinzel";
+}
+
 .package img {
   position: absolute;
-  width: 235px;
+  width: 100%;
   height: auto;
 
-  top: 0;
-
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .package h1 {
-  font-family: "atkinson";
-  font-size: 64px;
-  font-weight: bolder;
-  text-transform: capitalize;
-  padding-left: 10px;
+  font-size: 52px;
+  font-weight: 700;
+
+  z-index: 1;
+
+  margin-top: 220px;
+  margin-bottom: 2rem;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.package .rewards * {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 20px;
+  margin-bottom: 0.8rem;
+
+  list-style-type: disc;
+}
+
+.package .reward {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 #gold {
   border-color: var(--gold);
   background-color: var(--gold);
-  background-image: linear-gradient(var(--gold), #634524);
+  background-image: linear-gradient(var(--gold), #332312);
 }
 
 #platinum {
   border-color: var(--platinum);
-  background-image: linear-gradient(var(--platinum), #1e4f4e);
+  background-image: linear-gradient(var(--platinum), #39574d);
 }
 
 #diamond {

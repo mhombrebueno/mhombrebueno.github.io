@@ -8,10 +8,10 @@
   --secondary-text: ;
 
   /* RANKS */
-  --gold: #f0c57f;
-  --platinum: #abffe3;
-  --diamond: #abcaff;
-  --master: #f8abff;
+  --gold: #ab783f;
+  --platinum: #7ebfaa;
+  --diamond: #8183c9;
+  --master: #d481db;
 
   /* DIMENSIONS */
   --navbar-height: 50px;
