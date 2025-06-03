@@ -1,4 +1,30 @@
-#reviews {
-  background-color: var(--secondary-colour);
-  /* height: 200vh; */
+#reviews .content {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.review * {
+  color: black;
+}
+
+.review {
+  width: 35%;
+  background-color: white;
+  padding: 30px;
+
+  border-radius: 10px;
+}
+
+.review h1 {
+  font-size: 22px;
+  margin: 0 0 1rem 0;
+  padding: 0 0 0.5rem 0;
+  border-bottom: 1px solid gainsboro;
+}
+
+.review h2 {
+  font-size: 18px;
+  margin: 0 0 0.5rem 0;
 }

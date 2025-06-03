@@ -1,4 +1,39 @@
+@import url("variables.css");
+
 #profile {
-  background-color: var(--secondary-colour);
+  height: 75vh;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  margin-top: var(--navbar-height);
+
   color: white;
+}
+
+#profile .text {
+  width: 30%;
+}
+
+#profile h1 {
+  color: #ffe7cc;
+  margin: 0 0 0.5rem 0;
+}
+
+#profile h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ccebe9;
+
+  margin-bottom: 1.5rem;
+}
+
+#profile p {
+  margin-bottom: 1rem;
+}
+
+#profile img {
+  width: 400px;
 }

@@ -8,12 +8,12 @@ function Navbar() {
         <h1>{BUSINESS_NAME}</h1>
       </div>
 
-      <div id="nav-buttons">
+      <div className="buttons">
         <a href="#profile">Profile</a>
         <a href="#reviews">Reviews</a>
         <a href="#packages">Packages</a>
         <a href="#contact">Contact</a>
-        <a href="#certificates">Certification</a>
+        <a href="#certificates">Certifications</a>
       </div>
     </div>
   );

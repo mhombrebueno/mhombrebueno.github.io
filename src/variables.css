@@ -8,11 +8,26 @@
   --secondary-text: ;
 
   /* RANKS */
-  --gold: #ab783f;
+  --gold: #d1995a;
   --platinum: #7ebfaa;
   --diamond: #8183c9;
   --master: #d481db;
 
   /* DIMENSIONS */
   --navbar-height: 50px;
+}
+
+@font-face {
+  font-family: "cinzel";
+  src: url(/public/fonts/Cinzel/Cinzel-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/public/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/public/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
 }

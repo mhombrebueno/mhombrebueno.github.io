@@ -1,17 +1,26 @@
-@font-face {
-  font-family: "Roboto";
-  src: url(/public/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+@import url("variables.css");
+
+@media (min-width: 480px) and (max-width: 767px) {
+  section h1 {
+    text-align: center;
+  }
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 * {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: var(--main-text);
+}
+
+body {
+  background-color: var(--secondary-colour);
+  width: 100%;
 }
 
 body * {
@@ -19,15 +28,17 @@ body * {
   flex-direction: column;
 }
 
-body section {
-  padding: var(--navbar-height) 100px;
+@media (min-width: 768px) {
+  body section {
+    padding: var(--navbar-height) 100px;
+  }
 }
 
 title {
   display: none;
 }
 
-.section-heading {
+section h1 {
   font-size: 48px;
   margin: 4rem 0 8rem 0;
   color: white;

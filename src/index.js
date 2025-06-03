@@ -12,7 +12,7 @@ import Profile from "./Profile";
 import Reviews from "./Reviews";
 import Packages from "./Packages";
 import Contact from "./Contact";
-import Certification from "./Certification";
+import Certifications from "./Certifications";
 
 import reportWebVitals from "./reportWebVitals";
 import { BUSINESS_NAME } from "./Variables";
@@ -27,7 +27,7 @@ root.render(
     <Reviews />
     <Packages />
     <Contact />
-    <Certification />
+    <Certifications />
   </React.StrictMode>
 );
 

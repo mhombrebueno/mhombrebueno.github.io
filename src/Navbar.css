@@ -1,3 +1,6 @@
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
 #navbar {
   position: fixed;
   height: var(--navbar-height);
@@ -14,20 +17,20 @@
   align-items: center;
 }
 
-#nav-buttons {
+#navbar .buttons {
   flex-direction: row;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
 
   gap: 50px;
 }
 
-#nav-buttons a {
+#navbar a {
   border-bottom: 2px solid transparent;
   text-decoration: none;
   color: white;
 }
 
-#nav-buttons a:hover {
+#navbar a:hover {
   border-bottom: 2px solid white;
 }

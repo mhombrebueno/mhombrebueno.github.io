@@ -1,1 +1,1 @@
-export const BUSINESS_NAME = "Pivitol Fitness";
+export const BUSINESS_NAME = "Pivotal Fitness";

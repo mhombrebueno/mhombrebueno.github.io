@@ -1,16 +1,35 @@
-#certification {
-  background-color: var(--secondary-colour);
+@media (min-width: 480px) and (max-width: 767px) {
+  #certifications {
+    align-items: center;
+  }
+
+  .certificate {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .certificate .frame .content {
+    padding: 20px;
+  }
 }
 
-#certification .content {
-  flex-direction: row;
-  flex-wrap: wrap;
+@media (min-width: 768px) {
+  #certifications .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .certificate {
+    width: 50%;
+  }
+
+  .certificate .frame .content {
+    padding: 50px 80px;
+  }
 }
 
 .certificate {
-  width: 50%;
-  margin-bottom: 100px;
-
   justify-content: center;
   align-items: center;
 }
@@ -19,6 +38,7 @@
   font-size: 16px;
   width: 80%;
   margin-top: 2rem;
+  margin-bottom: 8rem;
   text-align: center;
 }
 
@@ -29,7 +49,6 @@
 
 .certificate .frame .content {
   border: inset;
-  padding: 50px 80px;
 }
 
 .certificate img {
