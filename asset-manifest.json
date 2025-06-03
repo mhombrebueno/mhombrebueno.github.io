@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad460fad.css",
-    "main.js": "/static/js/main.87bd86c6.js",
+    "main.css": "/static/css/main.3adea63a.css",
+    "main.js": "/static/js/main.4b317cb0.js",
     "static/js/453.e739cf82.chunk.js": "/static/js/453.e739cf82.chunk.js",
+    "static/media/Inter-VariableFont_opsz,wght.ttf": "/static/media/Inter-VariableFont_opsz,wght.e05c5f3d1fa6a3893d84.ttf",
     "static/media/Roboto-VariableFont_wdth,wght.ttf": "/static/media/Roboto-VariableFont_wdth,wght.3c9d0f6513f7cfe91016.ttf",
     "static/media/Cinzel-VariableFont_wght.ttf": "/static/media/Cinzel-VariableFont_wght.7aeb3adcf73e49e8a979.ttf",
     "index.html": "/index.html",
-    "main.ad460fad.css.map": "/static/css/main.ad460fad.css.map",
-    "main.87bd86c6.js.map": "/static/js/main.87bd86c6.js.map",
+    "main.3adea63a.css.map": "/static/css/main.3adea63a.css.map",
+    "main.4b317cb0.js.map": "/static/js/main.4b317cb0.js.map",
     "453.e739cf82.chunk.js.map": "/static/js/453.e739cf82.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad460fad.css",
-    "static/js/main.87bd86c6.js"
+    "static/css/main.3adea63a.css",
+    "static/js/main.4b317cb0.js"
   ]
 }
