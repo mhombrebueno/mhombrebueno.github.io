@@ -37,9 +37,10 @@
 }
 
 .package h1 {
-  font-family: "cinzel";
+  font-family: "Cinzel";
   font-size: 52px;
   font-weight: 700;
+  color: white;
 
   z-index: 1;
 
@@ -56,6 +57,7 @@
 }
 
 .package li {
+  flex-direction: row;
   font-size: 14px;
 }
 

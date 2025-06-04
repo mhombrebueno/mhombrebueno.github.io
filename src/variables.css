@@ -1,8 +1,8 @@
 :root {
   /* COLOURS */
-  --primary-colour: #005e83;
-  --secondary-colour: #041b29;
-  --tertiary-colour: #c84630;
+  --primary-colour: #041b29;
+  --secondary-colour: #ffe7cc;
+  --tertiary-colour: #ccebe9;
 
   --main-text: white;
   --secondary-text: ;
@@ -18,7 +18,7 @@
 }
 
 @font-face {
-  font-family: "cinzel";
+  font-family: "Cinzel";
   src: url(/public/fonts/Cinzel/Cinzel-VariableFont_wght.ttf);
 }
 
@@ -30,4 +30,9 @@
 @font-face {
   font-family: "Inter";
   src: url(/public/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: "Gantari";
+  src: url(/public/fonts/Gantari/Gantari-VariableFont_wght.ttf);
 }

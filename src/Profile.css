@@ -18,14 +18,14 @@
 }
 
 #profile h1 {
-  color: #ffe7cc;
+  color: var(--secondary-colour);
   margin: 0 0 0.5rem 0;
 }
 
 #profile h2 {
   font-size: 18px;
   font-weight: 500;
-  color: #ccebe9;
+  color: var(--tertiary-colour);
 
   margin-bottom: 1.5rem;
 }

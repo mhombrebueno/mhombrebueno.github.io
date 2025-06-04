@@ -1,3 +1,4 @@
+@import url("variables.css");
 @media (min-width: 480px) and (max-width: 767px) {
 }
 
@@ -17,10 +18,18 @@
   align-items: center;
 }
 
+#navbar * {
+  font-family: "Gantari";
+  font-weight: 500;
+}
+
+#navbar h1 {
+  font-weight: bold;
+}
+
 #navbar .buttons {
   flex-direction: row;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
 
   gap: 50px;
 }

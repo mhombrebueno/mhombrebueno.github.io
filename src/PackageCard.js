@@ -8,11 +8,10 @@ function PackageCard({ title, symbol, rewards, description }) {
         <ul>
           {rewards.map((reward, index) => (
             <li key={index} className="reward">
-              {reward}
+              <span>+</span> {reward}
             </li>
           ))}
         </ul>
-        <h2>{description}</h2>
       </div>
     </div>
   );

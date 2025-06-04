@@ -10,7 +10,6 @@ function Packages() {
           title="gold"
           symbol="/imgs/ranks/gold-rank.webp"
           rewards={["8 Week Program PDF file", "Weight Loss", "Muscle Gain"]}
-          description="Description"
         />
         <PackageCard
           title="platinum"
@@ -22,22 +21,22 @@ function Packages() {
             "Nutrition Plan",
             "Weekly Check-ins",
           ]}
-          description="Description"
         />
         <PackageCard
           title="diamond"
           symbol="/imgs/ranks/diamond-rank.webp"
           rewards={["Platinum Rewards"]}
-          description="Description"
         />
         <PackageCard
           title="master"
           symbol="/imgs/ranks/master-rank.webp"
           rewards={["Platinum Rewards"]}
-          description="Description"
         />
       </div>
       <h2>Add Ons</h2>
+      <span>thing</span>
+      <span>thing</span>
+      <span>thing</span>
     </section>
   );
 }

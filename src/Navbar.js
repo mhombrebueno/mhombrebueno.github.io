@@ -13,7 +13,7 @@ function Navbar() {
         <a href="#reviews">Reviews</a>
         <a href="#packages">Packages</a>
         <a href="#contact">Contact</a>
-        <a href="#certificates">Certifications</a>
+        <a href="#certifications">Certifications</a>
       </div>
     </div>
   );
