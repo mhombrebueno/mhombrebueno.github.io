@@ -1,20 +1,48 @@
 @import url("variables.css");
 
 #profile {
-  height: 75vh;
-
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-
   margin-top: var(--navbar-height);
-
-  color: white;
 }
 
-#profile .text {
-  width: 30%;
+@media (min-width: 480px) and (max-width: 767px) {
+  #profile {
+    align-items: center;
+  }
+
+  #profile .text {
+    text-align: center;
+  }
+
+  #profile .text p {
+    padding: 0 20px;
+  }
+
+  #profile img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  #profile {
+    height: 75vh;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    margin-top: var(--navbar-height);
+
+    color: white;
+  }
+
+  #profile .text {
+    width: 30%;
+  }
+
+  #profile img {
+    width: 400px;
+  }
 }
 
 #profile h1 {
@@ -32,8 +60,4 @@
 
 #profile p {
   margin-bottom: 1rem;
-}
-
-#profile img {
-  width: 400px;
 }
