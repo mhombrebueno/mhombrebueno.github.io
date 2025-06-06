@@ -15,6 +15,10 @@
 
   /* DIMENSIONS */
   --navbar-height: 50px;
+
+  /* SCREEN SIZES */
+  --mobile-min: 370px;
+  --mobile-max: 767px;
 }
 
 @font-face {
