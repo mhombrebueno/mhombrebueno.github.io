@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb9b6b32.css",
+    "main.css": "/static/css/main.dbb6e8df.css",
     "main.js": "/static/js/main.bf1b4e92.js",
     "static/js/453.e739cf82.chunk.js": "/static/js/453.e739cf82.chunk.js",
     "static/media/Inter-VariableFont_opsz,wght.ttf": "/static/media/Inter-VariableFont_opsz,wght.e05c5f3d1fa6a3893d84.ttf",
@@ -8,12 +8,12 @@
     "static/media/Cinzel-VariableFont_wght.ttf": "/static/media/Cinzel-VariableFont_wght.7aeb3adcf73e49e8a979.ttf",
     "static/media/Gantari-VariableFont_wght.ttf": "/static/media/Gantari-VariableFont_wght.2472aa4799280fa7ffa8.ttf",
     "index.html": "/index.html",
-    "main.fb9b6b32.css.map": "/static/css/main.fb9b6b32.css.map",
+    "main.dbb6e8df.css.map": "/static/css/main.dbb6e8df.css.map",
     "main.bf1b4e92.js.map": "/static/js/main.bf1b4e92.js.map",
     "453.e739cf82.chunk.js.map": "/static/js/453.e739cf82.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb9b6b32.css",
+    "static/css/main.dbb6e8df.css",
     "static/js/main.bf1b4e92.js"
   ]
 }
