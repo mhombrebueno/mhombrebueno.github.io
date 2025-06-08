@@ -30,7 +30,7 @@
   margin: 0 0 0.5rem 0;
 }
 
-@media (min-width: 370px) and (max-width: 767px) {
+@media (min-width: 370px) and (max-width: 1599px) {
   #reviews .content {
     flex-direction: column;
     justify-content: center;

@@ -1,6 +1,6 @@
 @import url("variables.css");
 
-@media (min-width: 370px) and (max-width: 767px) {
+@media (min-width: 370px) and (max-width: 1599px) {
   section h1 {
     text-align: center;
   }
@@ -28,7 +28,7 @@ body * {
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1600px) {
   body section {
     padding: var(--navbar-height) 100px;
   }

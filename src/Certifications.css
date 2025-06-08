@@ -1,4 +1,4 @@
-@media (min-width: 370px) and (max-width: 767px) {
+@media (min-width: 370px) and (max-width: 1599px) {
   #certifications {
     align-items: center;
   }
@@ -13,7 +13,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1600px) {
   #certifications .content {
     flex-direction: row;
     flex-wrap: wrap;

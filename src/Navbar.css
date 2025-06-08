@@ -1,5 +1,5 @@
 @import url("variables.css");
-@media (min-width: 370px) and (max-width: 767px) {
+@media (min-width: 370px) and (max-width: 1599px) {
   #navbar {
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1600px) {
   #navbar {
     position: fixed;
     height: var(--navbar-height);
