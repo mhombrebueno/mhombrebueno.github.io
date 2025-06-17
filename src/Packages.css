@@ -97,6 +97,19 @@
   .package {
     margin-bottom: 6vh;
   }
+
+  #add-ons h2 {
+    text-align: center;
+  }
+
+  #add-ons .content {
+    flex-direction: column;
+  }
+
+  .add-on {
+    width: 80%;
+    margin-bottom: 5rem;
+  }
 }
 
 @media (min-width: 1600px) {

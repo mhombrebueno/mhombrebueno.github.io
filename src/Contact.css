@@ -29,3 +29,13 @@
   border: 2px solid white;
   border-radius: 15px;
 }
+
+@media (min-width: 370px) and (max-width: 1599px) {
+  #contact .content {
+    flex-direction: column;
+  }
+
+  .portrait {
+    width: 75%;
+  }
+}
