@@ -11,7 +11,7 @@ function Profile() {
         </div>
         <p>
           I am a UBC Kinesiology graduate, competitive powerlifter, certified
-          personal trainer, and more. But I didn’t start here.
+          personal trainer, and more. But I didn’t start here...
         </p>
         <p>
           Growing up, I struggled with confidence, especially as one of the

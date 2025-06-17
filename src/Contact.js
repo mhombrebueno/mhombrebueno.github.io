@@ -20,6 +20,10 @@ function Contact() {
             <img src="/icons/insta.svg" alt="Instagram" />
             <span>{BUSINESS_INSTAGRAM}</span>
           </div>
+          <div className="info">
+            <img src="/icons/tiktok.svg" alt="TikTok" />
+            <span>{BUSINESS_INSTAGRAM}</span>
+          </div>
         </div>
       </div>
     </section>
