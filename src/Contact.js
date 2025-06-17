@@ -6,8 +6,21 @@ function Contact() {
     <section id="contact">
       <h1>Contact</h1>
       <div className="content">
-        <span>Email: {BUSINESS_EMAIL}</span>
-        <span>Instagram: {BUSINESS_INSTAGRAM}</span>
+        <img
+          className="portrait"
+          src="/imgs/miguel/portrait.jpg"
+          alt="Portrait"
+        ></img>
+        <div>
+          <div className="info">
+            <img src="/icons/email.svg" alt="Email" />
+            <span>{BUSINESS_EMAIL}</span>
+          </div>
+          <div className="info">
+            <img src="/icons/insta.svg" alt="Instagram" />
+            <span>{BUSINESS_INSTAGRAM}</span>
+          </div>
+        </div>
       </div>
     </section>
   );

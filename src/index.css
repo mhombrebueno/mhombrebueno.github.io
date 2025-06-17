@@ -43,3 +43,7 @@ section h1 {
   margin: 4rem 0 8rem 0;
   color: var(--secondary-colour);
 }
+
+section {
+  margin-bottom: 150px;
+}

@@ -29,14 +29,6 @@
   }
 }
 
-#certifications {
-  background-color: var(--tertiary-colour);
-}
-
-#certifications h1 {
-  color: black;
-}
-
 .certificate {
   justify-content: center;
   align-items: center;

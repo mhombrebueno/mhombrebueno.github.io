@@ -24,10 +24,10 @@ root.render(
   <React.StrictMode>
     <Navbar />
     <Profile />
-    <Reviews />
     <Packages />
     <Contact />
     <Certifications />
+    <Reviews />
   </React.StrictMode>
 );
 

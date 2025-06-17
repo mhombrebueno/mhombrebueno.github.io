@@ -1,5 +1,9 @@
 @import url("variables.css");
 
+#packages .content {
+  margin-bottom: 100px;
+}
+
 .package {
   position: relative;
   width: 350px;
@@ -70,7 +74,6 @@
 
 #add-ons .content {
   flex-direction: row;
-  justify-content: space-around;
 }
 
 #add-ons h2 {
@@ -104,6 +107,6 @@
     width: 100%;
     height: 100%;
 
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }

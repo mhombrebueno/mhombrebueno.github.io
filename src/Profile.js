@@ -3,7 +3,7 @@ import "./Profile.css";
 function Profile() {
   return (
     <section id="profile">
-      <img alt="Portrait" src="/imgs/portrait.jpeg" />
+      {/* <img alt="Portrait" src="/imgs/miguel/hero-image.jpg" /> */}
       <div className="text">
         <h1>Miguel Hombrebueno</h1>
         <div>

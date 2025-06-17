@@ -10,10 +10,10 @@ function Navbar() {
 
       <div className="buttons">
         <a href="#profile">Profile</a>
-        <a href="#reviews">Reviews</a>
         <a href="#packages">Packages</a>
         <a href="#contact">Contact</a>
         <a href="#certifications">Certifications</a>
+        <a href="#reviews">Reviews</a>
       </div>
     </div>
   );
