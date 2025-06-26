@@ -13,6 +13,9 @@ function Contact() {
         ></img>
         <div>
           <div className="info">
+            <h2>Miguel Hombrebueno</h2>
+          </div>
+          <div className="info">
             <img src="/icons/email.svg" alt="Email" />
             <span>{BUSINESS_EMAIL}</span>
           </div>

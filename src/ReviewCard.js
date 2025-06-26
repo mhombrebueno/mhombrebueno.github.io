@@ -3,8 +3,10 @@ function ReviewCard({ name, stars, review }) {
     <div className="review">
       <h1>{name}</h1>
       <h2> {stars} </h2>
-      <div className="content">
-        <p>{review}</p>
+      <div className="text">
+        {review.map((paragraph, idx) => (
+          <p key={idx}>{paragraph}</p>
+        ))}
       </div>
     </div>
   );

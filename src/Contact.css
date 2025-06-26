@@ -1,8 +1,7 @@
 #contact .content {
-  font-size: 22px;
+  font-size: 20px;
 
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   gap: 100px;
 }
@@ -14,7 +13,6 @@
   padding: 1rem;
   margin-bottom: 2rem;
 
-  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   backdrop-filter: blur(20px);
 }

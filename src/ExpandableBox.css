@@ -1,0 +1,9 @@
+.expandable-box {
+  transition: max-height 1s ease;
+  overflow: hidden;
+}
+
+.expandable-box button {
+  border: none;
+  background: none;
+}
