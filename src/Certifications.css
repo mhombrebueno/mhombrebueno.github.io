@@ -29,7 +29,7 @@
   border: solid 1px grey;
 }
 
-@media (min-width: 370px) and (max-width: 1599px) {
+@media (min-width: 370px) and (max-width: 1439px) {
   .certificate {
     width: 80%;
   }
@@ -41,7 +41,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   #certifications .content {
     flex-direction: row;
     flex-wrap: wrap;

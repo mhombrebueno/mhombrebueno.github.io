@@ -2,7 +2,9 @@
 
 .package {
   position: relative;
-  width: 350px;
+  width: 20%;
+  max-width: 350px;
+  min-width: 310px;
   height: 750px;
 
   border: 2px solid;
@@ -87,7 +89,7 @@
   margin-bottom: 0.5rem;
 }
 
-@media (min-width: 370px) and (max-width: 1599px) {
+@media (min-width: 370px) and (max-width: 1439px) {
   #packages .content {
     align-items: center;
   }
@@ -110,7 +112,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   #packages .content {
     flex-direction: row;
     flex-wrap: wrap;
