@@ -1,6 +1,7 @@
+import PackageCard from "./components/PackageCard";
+import AddOn from "./components/AddOn";
+
 import "./Packages.css";
-import PackageCard from "./PackageCard";
-import AddOn from "./AddOn";
 
 function Packages() {
   return (
@@ -11,6 +12,7 @@ function Packages() {
           title="gold"
           icon="/imgs/ranks/gold-rank.webp"
           rewards={["8 Week Program PDF", "Weight Loss PDF", "Muscle Gain PDF"]}
+          payment="One Time Purchase"
           durations={["One Time Purchase"]}
           prices={[80]}
         />
@@ -25,6 +27,7 @@ function Packages() {
             "Habit Tracking",
             "Weekly Check-ins",
           ]}
+          payment="Paid in Full"
           durations={["1 Month", "2 Months"]}
           prices={[300, 550]}
         />
@@ -40,6 +43,7 @@ function Packages() {
             "Habit Tracking",
             "Weekly Check-ins",
           ]}
+          payment="Paid in Full"
           durations={["6 Sessions", "12 Sessions", "24 Sessions"]}
           prices={[510, 960, 1800]}
         />
@@ -55,6 +59,7 @@ function Packages() {
             "Habit Tracking",
             "Weekly Check-ins",
           ]}
+          payment="Weekly Payments"
           durations={[
             "1x per week",
             "2x per week",

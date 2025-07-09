@@ -1,5 +1,10 @@
 import "./Contact.css";
-import { BUSINESS_EMAIL, BUSINESS_INSTAGRAM } from "./Variables";
+import {
+  BUSINESS_EMAIL,
+  BUSINESS_INSTAGRAM,
+  BUSINESS_TIKTOK,
+} from "./Variables";
+import ContactInfo from "./components/ContactInfo";
 
 function Contact() {
   return (
@@ -11,23 +16,30 @@ function Contact() {
           src="/imgs/miguel/portrait.jpg"
           alt="Portrait"
         ></img>
-        <div>
-          <div className="info">
-            <h2>Miguel Hombrebueno</h2>
-          </div>
-          <div className="info">
-            <img src="/icons/email.svg" alt="Email" />
-            <span>{BUSINESS_EMAIL}</span>
-          </div>
-          <div className="info">
-            <img src="/icons/insta.svg" alt="Instagram" />
-            <span>{BUSINESS_INSTAGRAM}</span>
-          </div>
-          <div className="info">
-            <img src="/icons/tiktok.svg" alt="TikTok" />
-            <span>{BUSINESS_INSTAGRAM}</span>
-          </div>
+
+        <div className="contacts">
+          <h2>Miguel Hombrebueno</h2>
+          <ContactInfo
+            icon="/icons/email.svg"
+            alt="Email"
+            contact={BUSINESS_EMAIL}
+          />
+          <ContactInfo
+            icon="/icons/insta.svg"
+            alt="Instagram"
+            contact={BUSINESS_INSTAGRAM}
+          />
+          <ContactInfo
+            icon="/icons/tiktok.svg"
+            alt="TikTok"
+            contact={BUSINESS_TIKTOK}
+          />
         </div>
+        <img
+          className="portrait"
+          src="/imgs/miguel/bicep-curl.jpg"
+          alt="Portrait"
+        ></img>
       </div>
     </section>
   );

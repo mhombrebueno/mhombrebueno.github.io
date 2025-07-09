@@ -1,12 +1,14 @@
 import { useState } from "react";
 
-function PackageCard({ title, icon, rewards, durations, prices }) {
+import "./PackageCard.css";
+
+function PackageCard({ title, icon, rewards, payment, durations, prices }) {
   const [flipped, setFlipped] = useState(false);
 
   return (
     <div
       id={title}
-      className={`package ${flipped ? "flipped" : ""}`}
+      className={`package-card ${flipped ? "flipped" : ""}`}
       onClick={() => setFlipped(!flipped)}
     >
       <div className="front">
@@ -24,9 +26,8 @@ function PackageCard({ title, icon, rewards, durations, prices }) {
         </div>
       </div>
       <div className="back">
-        <img alt={title} src={icon} />
-        <h1>{title}</h1>
         <div className="items">
+          <div className="payment">{payment}</div>
           <h2>Prices</h2>
           <ul>
             {durations.map((duration, index) => (

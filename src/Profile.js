@@ -1,5 +1,5 @@
 import "./Profile.css";
-import ExpandableBox from "./ExpandableBox";
+import ExpandableBox from "./components/ExpandableBox";
 
 function Profile() {
   return (

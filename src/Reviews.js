@@ -1,5 +1,5 @@
 import "./Reviews.css";
-import ReviewCard from "./ReviewCard";
+import ReviewCard from "./components/ReviewCard";
 
 function Reviews() {
   return (

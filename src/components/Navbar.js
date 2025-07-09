@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { BUSINESS_NAME } from "./Variables";
+import { BUSINESS_NAME } from "../Variables";
 
 function Navbar() {
   return (
@@ -12,8 +12,8 @@ function Navbar() {
         <a href="#profile">Profile</a>
         <a href="#packages">Packages</a>
         <a href="#contact">Contact</a>
-        <a href="#certifications">Certifications</a>
         <a href="#reviews">Reviews</a>
+        <a href="#certifications">Certifications</a>
       </div>
     </div>
   );

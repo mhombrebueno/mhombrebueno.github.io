@@ -1,160 +1,21 @@
 @import url("variables.css");
 
 #packages {
-  background-color: #141414;
-}
-
-.package {
-  position: relative;
-  width: 20%;
-  max-width: 350px;
-  min-width: 310px;
-  height: 750px;
-
-  border: 2px solid;
-  border-radius: 15px;
-
-  margin-bottom: 80px;
-  perspective: 1000px;
-
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-}
-
-.package img {
-  position: absolute;
-  width: 100%;
-  height: auto;
-
-  opacity: 0.5;
-}
-
-.package h1 {
-  font-family: "Cinzel";
-  font-size: 52px;
-  font-weight: 700;
-  color: white;
-
-  z-index: 1;
-
-  margin-top: 220px;
-  margin-bottom: 2rem;
-
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.package h2 {
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.package li {
-  flex-direction: row;
-  font-size: 14px;
-}
-
-.package .front .items * {
-  padding: 0 20px;
-  margin-bottom: 0.8rem;
-}
-
-.package .back h2,
-.package .back li,
-.package .back ul {
-  padding: 0 20px;
-  margin-bottom: 0.8rem;
-}
-
-.package .back {
-  transform: rotateY(180deg);
-}
-
-.package .back li {
-  font-size: 16px;
-}
-
-.package .price {
-  justify-content: space-between;
-}
-
-.package.flipped {
-  transform: rotateY(180deg);
-}
-
-.package .front,
-.package .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-#gold {
-  border-color: var(--gold);
-  background-color: var(--gold);
-  background-image: linear-gradient(var(--gold), #21170b);
-}
-
-#platinum {
-  border-color: var(--platinum);
-  background-image: linear-gradient(var(--platinum), #0e1a16);
-}
-
-#diamond {
-  border-color: var(--diamond);
-  background-image: linear-gradient(var(--diamond), #0e1926);
-}
-
-#master {
-  border-color: var(--master);
-  background-image: linear-gradient(var(--master), #190b1f);
+  background-color: var(--secondary-colour);
 }
 
 #add-ons {
-  padding-top: 30px;
-  background-color: #2b2b2b;
-  border-radius: 20px;
+  background-color: var(--add-ons);
+
+  padding-top: 40px;
+  padding-bottom: 10px;
+
   border: 2px solid grey;
+  border-radius: 20px;
 }
 
-#add-ons h2 {
+#add-ons {
   text-align: center;
-}
-
-#add-ons p {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.add-on {
-  padding: 30px;
-}
-
-.add-on h3,
-.add-on p {
-  margin-bottom: 1rem;
-}
-
-/* PHONE SCREEN */
-@media (min-width: 370px) and (max-width: 1439px) {
-  #packages .content {
-    align-items: center;
-  }
-
-  .package {
-    margin-bottom: 6vw;
-  }
-
-  #add-ons .content {
-    flex-direction: column;
-  }
-
-  .add-on {
-    width: 80%;
-    margin-bottom: 5rem;
-  }
 }
 
 /* PC SCREEN */
@@ -171,5 +32,16 @@
 
   #add-ons .content {
     justify-content: space-around;
+  }
+}
+
+/* PHONE SCREEN */
+@media (min-width: 370px) and (max-width: 1439px) {
+  #packages .content {
+    align-items: center;
+  }
+
+  #add-ons .content {
+    flex-direction: column;
   }
 }

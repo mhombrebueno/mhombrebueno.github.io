@@ -7,7 +7,7 @@ import "./index.css";
 import "./variables.css";
 
 // React Components
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
 import Profile from "./Profile";
 import Reviews from "./Reviews";
 import Packages from "./Packages";

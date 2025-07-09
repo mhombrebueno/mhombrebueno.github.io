@@ -1,11 +1,5 @@
 @import url("variables.css");
 
-@media (min-width: 370px) and (max-width: 1439px) {
-  section h1 {
-    text-align: center;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -28,16 +22,6 @@ body * {
   flex-direction: column;
 }
 
-/* PC SCREEN */
-section {
-  padding-bottom: 150px;
-}
-@media (min-width: 1440px) {
-  body section {
-    padding: 120px 100px;
-  }
-}
-
 title {
   display: none;
 }
@@ -45,4 +29,18 @@ title {
 section h1 {
   font-size: 48px;
   margin: 0 0 8rem 0;
+}
+
+/* PC SCREEN */
+@media (min-width: 1440px) {
+  section {
+    padding: 200px 100px;
+  }
+}
+
+/* PHONE SCREEN */
+@media (min-width: 370px) and (max-width: 1439px) {
+  section h1 {
+    text-align: center;
+  }
 }

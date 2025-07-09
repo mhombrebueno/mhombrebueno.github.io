@@ -1,0 +1,15 @@
+.contact-info {
+  /* flex-direction: row; */
+  align-items: center;
+  gap: 0.5rem;
+  /* padding: 1rem; */
+  margin-bottom: 2rem;
+
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+}
+
+.contact-info img {
+  width: 30px;
+  filter: invert(1);
+}
