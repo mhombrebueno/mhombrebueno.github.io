@@ -6,28 +6,29 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import "./variables.css";
 
-// Components
+// React Components
 import Navbar from "./Navbar";
 import Profile from "./Profile";
 import Reviews from "./Reviews";
 import Packages from "./Packages";
 import Contact from "./Contact";
 import Certifications from "./Certifications";
+import { BUSINESS_NAME } from "./Variables";
 
 import reportWebVitals from "./reportWebVitals";
-import { BUSINESS_NAME } from "./Variables";
 
 document.title = BUSINESS_NAME;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <Navbar />
     <Profile />
     <Packages />
     <Contact />
-    <Certifications />
     <Reviews />
+    <Certifications />
   </React.StrictMode>
 );
 

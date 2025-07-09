@@ -28,7 +28,7 @@
   #profile {
     padding-top: 0;
     position: relative;
-    height: 75vh;
+    height: 85vh;
 
     align-items: start;
     margin-top: var(--navbar-height);
@@ -62,14 +62,14 @@
 }
 
 #profile h1 {
-  color: var(--secondary-colour);
+  color: var(--primary-text);
   margin: 0 0 0.5rem 0;
 }
 
 #profile h2 {
   font-size: 18px;
   font-weight: 500;
-  color: var(--tertiary-colour);
+  color: var(--tertiary-text);
 
   margin-bottom: 1.5rem;
 }

@@ -1,14 +1,15 @@
-function AddOn({ title, prices }) {
+function AddOn({ title, sessions, prices }) {
   return (
     <div className="add-on">
       <h3>{title}</h3>
-      <ul>
-        {prices.map((price, index) => (
-          <li key={index} className="reward">
-            {price}
-          </li>
-        ))}
-      </ul>
+      {prices.map((price, index) => (
+        <p>
+          <div>
+            {sessions[index]} {sessions[index] === 1 ? "Session" : "Sessions"}
+          </div>
+          {price}
+        </p>
+      ))}
     </div>
   );
 }

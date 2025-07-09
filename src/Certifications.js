@@ -8,8 +8,8 @@ function Certifications() {
       <h1>Certifications</h1>
       <div className="content">
         <Certificate
-          title="Kinesiology"
-          img="/imgs/certifications/certified-personal-trainer.jpg"
+          title="Bachelor of Kinesiology"
+          img="/imgs/certifications/ubc-certificate.jpg"
         />
         <Certificate
           title="Certified Personal Trainer"

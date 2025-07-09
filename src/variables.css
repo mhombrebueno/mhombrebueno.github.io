@@ -1,11 +1,12 @@
 :root {
   /* COLOURS */
   --primary-colour: #041b29;
-  --secondary-colour: #ffe7cc;
-  --tertiary-colour: #ccebe9;
+  --secondary-colour: #141414;
+  --tertiary-colour: ;
 
-  --main-text: white;
-  --secondary-text: ;
+  --primary-text: #ffe7cc;
+  --secondary-text: #ffffff;
+  --tertiary-text: #ccebe9;
 
   /* RANKS */
   --gold: #d1995a;

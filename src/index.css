@@ -15,7 +15,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--main-text);
+  color: var(--secondary-text);
 }
 
 body {
@@ -28,9 +28,13 @@ body * {
   flex-direction: column;
 }
 
+/* PC SCREEN */
+section {
+  padding-bottom: 150px;
+}
 @media (min-width: 1440px) {
   body section {
-    padding: var(--navbar-height) 100px;
+    padding: 120px 100px;
   }
 }
 
@@ -40,10 +44,5 @@ title {
 
 section h1 {
   font-size: 48px;
-  margin: 4rem 0 8rem 0;
-  color: var(--secondary-colour);
-}
-
-section {
-  margin-bottom: 150px;
+  margin: 0 0 8rem 0;
 }

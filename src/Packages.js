@@ -9,69 +9,80 @@ function Packages() {
       <div className="content">
         <PackageCard
           title="gold"
-          symbol="/imgs/ranks/gold-rank.webp"
-          rewards={[
-            "8 Week Program Document",
-            "Weight Loss Document",
-            "Muscle Gain Document",
-          ]}
+          icon="/imgs/ranks/gold-rank.webp"
+          rewards={["8 Week Program PDF", "Weight Loss PDF", "Muscle Gain PDF"]}
+          durations={["One Time Purchase"]}
+          prices={[80]}
         />
         <PackageCard
           title="platinum"
-          symbol="/imgs/ranks/platinum-rank.webp"
+          icon="/imgs/ranks/platinum-rank.webp"
           rewards={[
             "Online Consultation",
-            "Online Personalized Training",
+            "Online Training",
             "Trainerize Program",
             "Nutrition Plan",
+            "Habit Tracking",
             "Weekly Check-ins",
           ]}
+          durations={["1 Month", "2 Months"]}
+          prices={[300, 550]}
         />
         <PackageCard
           title="diamond"
-          symbol="/imgs/ranks/diamond-rank.webp"
+          icon="/imgs/ranks/diamond-rank.webp"
           rewards={[
-            "Platinum Rewards",
-            "In Person Training",
-            "Session Punchcard",
+            "Packaged Payments",
+            "In-Person Consultation",
+            "In-Person Training",
+            "Trainerize Program",
+            "Nutrition Plan",
+            "Habit Tracking",
+            "Weekly Check-ins",
           ]}
+          durations={["6 Sessions", "12 Sessions", "24 Sessions"]}
+          prices={[510, 960, 1800]}
         />
         <PackageCard
           title="master"
-          symbol="/imgs/ranks/master-rank.webp"
+          icon="/imgs/ranks/master-rank.webp"
           rewards={[
-            "Platinum Rewards",
-            "In Person Training",
-            "Weekly Sessions",
+            "Weekly Payments",
+            "In-Person Consultation",
+            "In-Person Training",
+            "Trainerize Program",
+            "Nutrition Plan",
+            "Habit Tracking",
+            "Weekly Check-ins",
           ]}
+          durations={[
+            "1x per week",
+            "2x per week",
+            "3x per week",
+            "4x per week",
+          ]}
+          prices={[90, 170, 240, 300]}
         />
       </div>
+
       <div id="add-ons">
         <h2>Add Ons</h2>
         <div className="content">
-          <div className="add-on">
-            <h3>30-Minute Consultation</h3>
-            <p>
-              <span>1 Session</span> Free
-            </p>
-          </div>
-
-          <div className="add-on">
-            <h3>30-Minute Assisted Stretching Session</h3>
-            <p>
-              1 Session <span>$30</span>
-            </p>
-            <p>
-              4 Sessions <span>$100</span>
-            </p>
-          </div>
-
-          <div className="add-on">
-            <h3>30-Minute Nutrition Consultation</h3>
-            <p>
-              <span>1 Session</span> $25
-            </p>
-          </div>
+          <AddOn
+            title="30 Minute Consultation"
+            sessions={[1]}
+            prices={["Free"]}
+          />
+          <AddOn
+            title="30 Minute Assisted Stretching Session"
+            sessions={[1, 4]}
+            prices={["$30", "$100"]}
+          />
+          <AddOn
+            title="30 Minute Nutrition Consultation"
+            sessions={[1]}
+            prices={["$25"]}
+          />
         </div>
       </div>
     </section>
