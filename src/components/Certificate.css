@@ -1,0 +1,42 @@
+.certificate {
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.certificate-title {
+  font-size: 16px;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.certificate-frame {
+  border: solid 20px #6e6e6e;
+  padding: 60px 80px;
+  background-color: white;
+}
+
+.certificate-img {
+  width: 380px;
+  padding: 20px;
+  border: solid 1px grey;
+}
+
+/* PC SCREEN */
+@media (min-width: 1440px) {
+  .certificate {
+    width: 50%;
+  }
+}
+
+/* PHONE SCREEN */
+@media (min-width: 370px) and (max-width: 1439px) {
+  .certificate {
+    width: 80%;
+  }
+
+  .certificate-img {
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+}

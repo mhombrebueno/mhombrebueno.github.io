@@ -21,7 +21,7 @@
   --master-gradient: linear-gradient(var(--master), #190b1f);
 
   /* DIMENSIONS */
-  --navbar-height: 50px;
+  --navbar-height: 75px;
 }
 
 @font-face {

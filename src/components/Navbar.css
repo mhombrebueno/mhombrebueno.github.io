@@ -1,46 +1,4 @@
 @import url("../variables.css");
-@media (min-width: 370px) and (max-width: 1439px) {
-  #navbar {
-    justify-content: center;
-    align-items: center;
-  }
-
-  #navbar .buttons {
-    display: none;
-  }
-}
-
-@media (min-width: 1440px) {
-  #navbar {
-    position: fixed;
-    height: var(--navbar-height);
-    width: 100%;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-
-    padding: 0px 50px;
-    color: white;
-
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-#navbar {
-  position: fixed;
-  height: var(--navbar-height);
-  width: 100%;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(5px);
-
-  padding: 0px 100px;
-  color: white;
-
-  flex-direction: row;
-}
 
 #navbar * {
   font-family: "Gantari";
@@ -66,4 +24,33 @@
 
 #navbar a:hover {
   border-bottom: 2px solid white;
+}
+
+@media (min-width: 370px) and (max-width: 1439px) {
+  #navbar {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #navbar .buttons {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  #navbar {
+    position: fixed;
+    height: var(--navbar-height);
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+
+    padding: 0px 100px;
+    color: white;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

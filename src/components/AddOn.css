@@ -1,4 +1,8 @@
-.add-on .price {
+.add-on {
+  font-size: 14px;
+}
+
+.add-on-price {
   flex-direction: row;
   justify-content: space-between;
 }
@@ -6,12 +10,12 @@
 /* PC SCREEN */
 @media (min-width: 1440px) {
   .add-on {
-    padding: 30px;
+    padding: 0px;
   }
 
-  .add-on h3,
-  .add-on p {
-    margin-bottom: 1rem;
+  .add-on-title,
+  .add-on-price {
+    margin-bottom: 10px;
   }
 }
 

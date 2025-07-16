@@ -4,18 +4,18 @@ import ReactDOM from "react-dom/client";
 
 // CSS
 import "./index.css";
-import "./variables.css";
+import "./Variables";
 
 // React Components
 import Navbar from "./components/Navbar";
-import Profile from "./Profile";
-import Reviews from "./Reviews";
-import Packages from "./Packages";
-import Contact from "./Contact";
-import Certifications from "./Certifications";
+import Profile from "./pages/Profile";
+import Reviews from "./pages/Reviews";
+import Packages from "./pages/Packages";
+import Contacts from "./pages/Contacts";
+import Certifications from "./pages/Certifications";
 import { BUSINESS_NAME } from "./Variables";
 
-import reportWebVitals from "./reportWebVitals";
+import reportWebVitals from "./pages/reportWebVitals";
 
 document.title = BUSINESS_NAME;
 
@@ -23,12 +23,12 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <Navbar />
-    <Profile />
-    <Packages />
-    <Contact />
-    <Reviews />
-    <Certifications />
+    <Navbar title={BUSINESS_NAME} id="navbar" />
+    <Profile title="Miguel Hombrebueno" id="profile" />
+    <Packages title="Packages" id="packages" />
+    <Contacts title="Contacts" id="contacts" />
+    <Reviews title="Reviews" id="reviews" />
+    <Certifications title="Certifications" id="certifications" />
   </React.StrictMode>
 );
 

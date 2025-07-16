@@ -1,5 +1,5 @@
 .expandable-box {
-  transition: max-height 1s ease;
+  transition: max-height 1500ms ease-in-out;
   overflow: hidden;
 }
 

@@ -21,18 +21,23 @@
 .package-card {
   position: relative;
   width: 20%;
-  max-width: 350px;
-  min-width: 310px;
-  height: 750px;
+  width: 300px;
+  height: 650px;
+
+  margin-bottom: 100px;
 
   border: 2px solid;
   border-radius: 15px;
 
-  margin-bottom: 80px;
-
-  transition: transform 0.8s;
+  transition: transform 1500ms;
   transform-style: preserve-3d;
   cursor: pointer;
+}
+
+.package-card .small-text {
+  text-align: center;
+  font-size: 11px;
+  padding-bottom: 25px;
 }
 
 .package-card img {
@@ -40,16 +45,17 @@
   width: 100%;
   height: auto;
 
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .package-card h1 {
   font-family: "Cinzel";
+  font-size: 40px;
   font-weight: 700;
-  color: white;
+  color: var(--secondary-text);
 
-  margin-top: 200px;
-  margin-bottom: 2rem;
+  margin-top: 150px;
+  margin-bottom: 0;
 
   z-index: 1;
 
@@ -59,41 +65,49 @@
 
 .package-card h2 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 1.2rem;
+  z-index: 1;
 }
 
 .package-card li {
   flex-direction: row;
-  font-size: 14px;
+  font-size: 12px;
+  margin-bottom: 1.2rem;
+}
+
+.package-card span {
+  color: greenyellow;
+}
+
+.package-card .items {
+  padding: 0 22px;
 }
 
 .package-card .front,
 .package-card .back {
   position: absolute;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
 
-.package-card .front .items * {
-  padding: 0 20px;
-  margin-bottom: 0.8rem;
+.package-card .front ul * {
+  padding: 0 22px;
 }
 
 .package-card .back {
   transform: rotateY(180deg);
-  justify-content: center;
 }
 
-.package-card .back h2,
 .package-card .back ul,
 .package-card .back li {
-  padding: 0 20px;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .package-card .back li {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .package-card .price {

@@ -1,0 +1,22 @@
+#reviews {
+  background-color: #141414;
+}
+
+#reviews .content {
+  align-items: center;
+  gap: 50px;
+}
+
+
+@media (min-width: 370px) and (max-width: 1439px) {
+  #reviews .content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .review {
+    width: 100%;
+  }
+}
