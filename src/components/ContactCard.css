@@ -1,13 +1,24 @@
 .contact-card {
-  flex-direction: column;
+  padding: 20px;
+  font-size: 20px;
+
+  flex-direction: row;
   align-items: center;
+  gap: 50px;
 
   border-radius: 10px;
-  backdrop-filter: blur(20px);
+  border: solid transparent 2px;
+
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-card:hover {
+  border: solid rgba(255, 255, 255, 0.1) 2px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.8);
 }
 
 .contact-card-icon {
   width: 30px;
-  margin-bottom: 10px;
   filter: invert(1);
 }

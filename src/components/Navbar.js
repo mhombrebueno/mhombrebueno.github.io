@@ -11,7 +11,7 @@ function Navbar() {
       <div className="buttons">
         <a href="#profile">Profile</a>
         <a href="#packages">Packages</a>
-        <a href="#contact">Contact</a>
+        <a href="#contacts">Contacts</a>
         <a href="#reviews">Reviews</a>
         <a href="#certifications">Certifications</a>
       </div>

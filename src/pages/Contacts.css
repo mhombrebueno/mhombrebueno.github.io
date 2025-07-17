@@ -1,12 +1,29 @@
+#contacts {
+  background-color: var(--primary-colour);
+  /* background-image: linear-gradient(
+    var(--primary-colour),
+    var(--secondary-colour)
+  ); */
+}
+
 #contacts .content {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
 
   font-size: 20px;
 }
 
 .contact-list {
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.contact-full-name {
+  font-size: 52px;
+}
+
+.contact-full-name:hover {
+  cursor: default;
 }
 
 .contact-img {

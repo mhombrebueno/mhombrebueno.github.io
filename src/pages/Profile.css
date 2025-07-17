@@ -4,12 +4,16 @@
   padding: 0;
 }
 
+#profile .section-title {
+  display: none;
+}
+
 .profile-title {
   color: var(--primary-text);
   margin: 0 0 0.5rem 0;
 }
 
-#profile h2 {
+.profile-subtitle {
   font-size: 18px;
   font-weight: 500;
   color: var(--tertiary-text);
@@ -17,7 +21,7 @@
   margin-bottom: 1.5rem;
 }
 
-#profile p {
+#profile .paragraph {
   margin-bottom: 1rem;
 }
 

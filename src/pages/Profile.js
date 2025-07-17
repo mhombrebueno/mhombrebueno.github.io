@@ -7,9 +7,11 @@ function Profile(props) {
     <Section {...props}>
       <div className="profile-hero">
         <h1 className="profile-title">Miguel Hombrebueno</h1>
-        <div>
-          <h2>UBC Kinesiology | Personal Trainer | BCPA Powerlifter</h2>
-        </div>
+        <span>
+          <h2 className="profile-subtitle">
+            UBC Kinesiology | Personal Trainer | BCPA Powerlifter
+          </h2>
+        </span>
         <ExpandableBox
           text={[
             `I am a UBC Kinesiology graduate, competitive powerlifter, certified

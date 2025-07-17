@@ -2,6 +2,10 @@
 
 #packages {
   background-color: var(--secondary-colour);
+  background-image: linear-gradient(
+    var(--secondary-colour) 70%,
+    var(--primary-colour)
+  );
 }
 
 /* PC SCREEN */

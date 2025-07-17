@@ -10,14 +10,13 @@
 }
 
 .certificate-frame {
-  border: solid 20px #6e6e6e;
-  padding: 60px 80px;
+  border: solid 30px #45321d;
+  padding: 20px;
   background-color: white;
 }
 
 .certificate-img {
-  width: 380px;
-  padding: 20px;
+  width: 500px;
   border: solid 1px grey;
 }
 

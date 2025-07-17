@@ -9,9 +9,11 @@ function ExpandableBox({ text, maxHeight = 100 }) {
 
   return (
     <div className="expandable-box">
-      <div className="">
+      <div>
         {text.map((paragraph, idx) => (
-          <p key={idx}>{paragraph}</p>
+          <p className="paragraph" key={idx}>
+            {paragraph}
+          </p>
         ))}
       </div>
 

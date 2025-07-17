@@ -27,10 +27,6 @@ body * {
   color: var(--secondary-text);
 }
 
-/* title {
-  display: none;
-} */
-
 /* PC SCREEN */
 @media (min-width: 1440px) {
   .section {
