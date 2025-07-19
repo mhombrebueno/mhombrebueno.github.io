@@ -1,16 +1,17 @@
 @import url("../variables.css");
 
 #packages {
-  background-color: var(--secondary-colour);
   background-image: linear-gradient(
     var(--secondary-colour) 70%,
     var(--primary-colour)
   );
 }
 
+
 /* PC SCREEN */
 @media (min-width: 1440px) {
   #packages .content {
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
 

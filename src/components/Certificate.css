@@ -10,9 +10,38 @@
 }
 
 .certificate-frame {
+  position: relative;
   border: solid 30px #45321d;
   padding: 20px;
   background-color: white;
+
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+
+  transition: opacity 0.3s ease;
+}
+
+.certificate-frame:hover {
+  opacity: 20%;
+}
+
+.view-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 10px 20px;
+
+  background-color: white;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.certificate-frame:hover .view-button {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .certificate-img {

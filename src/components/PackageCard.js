@@ -20,7 +20,7 @@ function PackageCard({ title, icon, rewards, payment, durations, prices }) {
 
   return (
     <div
-      id={title}
+      id={title.toLowerCase()}
       className={`package-card ${flipped ? "flipped" : ""}`}
       onClick={() => setFlipped(!flipped)}
     >

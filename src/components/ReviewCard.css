@@ -3,23 +3,25 @@
 }
 
 .review-card {
+  width: 30%;
   height: fit-content;
-  width: 40%;
-  background-color: white;
   padding: 30px;
 
+  background-color: whitesmoke;
+
   border-radius: 10px;
+
+  border: solid rgba(255, 255, 255, 0.1) 2px;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.8);
 }
 
 .review-name {
   font-size: 22px;
   margin: 0 0 0.2rem 0;
-  padding: 0 0 0.5rem 0;
 }
 
 .review-stars {
   flex-direction: row;
-  margin: 0 0 1rem 0;
   padding: 0 0 0.8rem 0;
   border-bottom: 1px solid gainsboro;
 }
@@ -30,5 +32,5 @@
 }
 
 .review-text {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }

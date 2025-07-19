@@ -6,7 +6,9 @@ import "./Contacts.css";
 import {
   BUSINESS_EMAIL,
   BUSINESS_INSTAGRAM,
+  INSTAGRAM_LINK,
   BUSINESS_TIKTOK,
+  TIKTOK_LINK,
 } from "../Variables";
 
 function Contacts(props) {
@@ -23,16 +25,19 @@ function Contacts(props) {
           icon="/icons/email.svg"
           alt="Email"
           contact={BUSINESS_EMAIL}
+          link=""
         />
         <ContactCard
           icon="/icons/insta.svg"
           alt="Instagram"
           contact={BUSINESS_INSTAGRAM}
+          link={INSTAGRAM_LINK}
         />
         <ContactCard
           icon="/icons/tiktok.svg"
           alt="TikTok"
           contact={BUSINESS_TIKTOK}
+          link={TIKTOK_LINK}
         />
       </div>
     </Section>

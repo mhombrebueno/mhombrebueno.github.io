@@ -1,9 +1,5 @@
 #contacts {
   background-color: var(--primary-colour);
-  /* background-image: linear-gradient(
-    var(--primary-colour),
-    var(--secondary-colour)
-  ); */
 }
 
 #contacts .content {

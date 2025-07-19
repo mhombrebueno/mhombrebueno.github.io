@@ -8,8 +8,9 @@
 #reviews .content {
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 200px 50px;
 }
 
 @media (min-width: 370px) and (max-width: 1439px) {
