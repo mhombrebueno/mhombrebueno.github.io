@@ -1,10 +1,5 @@
 @import url("variables.css");
 
-.section-title {
-  font-size: 48px;
-  margin: 0 0 8rem 0;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -27,16 +22,39 @@ body * {
   color: var(--secondary-text);
 }
 
-/* PC SCREEN */
-@media (min-width: 1440px) {
-  .section {
-    padding: 200px 200px;
-  }
+.section-title {
+  text-align: center;
 }
 
 /* PHONE SCREEN */
 @media (min-width: 370px) and (max-width: 1439px) {
+  .section {
+    align-items: center;
+    padding: 4rem 0px;
+  }
+
   .section-title {
-    text-align: center;
+    width: 90%;
+
+    font-size: 48px;
+    color: gainsboro;
+    margin: 0 0 10rem 0;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid lightslategrey;
+  }
+}
+
+/* PC SCREEN */
+@media (min-width: 1440px) {
+  .section {
+    padding: 200px;
+  }
+
+  .section-title {
+    color: gainsboro;
+    font-size: 64px;
+    margin: 0 0 12rem 0;
+    padding-bottom: 8rem;
+    border-bottom: 2px solid lightslategrey;
   }
 }

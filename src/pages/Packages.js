@@ -15,7 +15,7 @@ function Packages(props) {
       ))}
 
       <div id="add-ons">
-        <h2>Add Ons</h2>
+        <h2 className="add-ons-title">Add Ons</h2>
         <div className="add-on-list">
           {addOns.map((addOn) => (
             <AddOn key={addOn.id} {...addOn} />

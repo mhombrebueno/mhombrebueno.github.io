@@ -8,10 +8,20 @@ function ContactCard({ icon, alt, contact, link }) {
         <span>{contact}</span>
       </div>
       <div className="contact-links">
-        <a href={link} target="_blank" className="action-icon">
-          ↗
+        <a className="action-icon">
+          <img
+            src="./icons/link.png"
+            alt="copy link"
+            className="contact-link-icon"
+          />
         </a>
-        <a className="action-icon">📋</a>
+        <a href={link} target="_blank" className="action-icon">
+          <img
+            src="./icons/open-in-new.png"
+            alt="copy link"
+            className="contact-link-icon"
+          />
+        </a>
       </div>
     </div>
   );

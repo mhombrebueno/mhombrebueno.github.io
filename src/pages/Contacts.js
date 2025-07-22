@@ -20,7 +20,6 @@ function Contacts(props) {
         alt="Portrait"
       />
       <div className="contact-list">
-        <h2 className="contact-full-name">Miguel Hombrebueno</h2>
         <ContactCard
           icon="/icons/email.svg"
           alt="Email"

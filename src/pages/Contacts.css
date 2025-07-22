@@ -2,38 +2,38 @@
   background-color: var(--primary-colour);
 }
 
-#contacts .content {
-  flex-direction: row;
-  justify-content: center;
-  gap: 100px;
-
-  font-size: 20px;
-}
-
-.contact-list {
-  justify-content: space-around;
-}
-
-.contact-full-name {
-  font-size: 52px;
-}
-
-.contact-full-name:hover {
-  cursor: default;
-}
-
 .contact-img {
-  width: 25%;
   border: 2px solid white;
   border-radius: 15px;
 }
 
+/* PHONE SCREEN */
 @media (min-width: 370px) and (max-width: 1439px) {
-  #contact .content {
-    flex-direction: column;
+  #contacts .content {
+    align-items: center;
   }
 
   .contact-img {
-    width: 75%;
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* PC SCREEN */
+@media (min-width: 1440px) {
+  #contacts .content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+
+    font-size: 20px;
+  }
+
+  .contact-img {
+    width: 25%;
+  }
+
+  .contact-list {
+    justify-content: space-around;
   }
 }

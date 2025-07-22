@@ -1,9 +1,5 @@
 @import url("../variables.css");
 
-#profile {
-  padding: 0;
-}
-
 #profile.section {
   margin: 0;
 }
@@ -18,14 +14,13 @@
 }
 
 .profile-subtitle {
-  font-size: 18px;
   font-weight: 500;
   color: var(--tertiary-text);
 
   margin-bottom: 1.5rem;
 }
 
-#profile .paragraph {
+.profile-text {
   margin-bottom: 1rem;
 }
 
@@ -38,16 +33,30 @@
   overflow: hidden;
 }
 
-.hero-text button {
+.profile-text button {
   border: none;
   background: none;
+}
+
+/* PHONE SCREEN */
+@media (min-width: 370px) and (max-width: 1439px) {
+  .profile-subtitle {
+    font-size: 12px;
+  }
+
+  .profile-text {
+    font-size: 12px;
+  }
+
+  .profile-hero {
+    text-align: center;
+  }
 }
 
 /* PC SCREEN */
 @media (min-width: 1440px) {
   #profile {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     position: relative;
     height: 85vh;
 
@@ -71,8 +80,16 @@
     background-repeat: no-repeat;
   }
 
+  .profile-title {
+    font-size: 64px;
+  }
+
+  .profile-subtitle {
+    font-size: 20px;
+  }
+
   .profile-hero {
-    width: 50%;
+    width: 800px;
     padding: 50px;
     margin-top: var(--navbar-height);
     z-index: 1;
@@ -80,24 +97,5 @@
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     backdrop-filter: blur(20px);
-  }
-}
-
-/* PHONE SCREEN */
-@media (min-width: 370px) and (max-width: 1439px) {
-  #profile {
-    align-items: center;
-  }
-
-  .profile-hero {
-    text-align: center;
-  }
-
-  .profile-hero p {
-    padding: 0 20px;
-  }
-
-  #profile img {
-    width: 50%;
   }
 }

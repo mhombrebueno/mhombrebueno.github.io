@@ -7,7 +7,6 @@
   );
 }
 
-
 /* PC SCREEN */
 @media (min-width: 1440px) {
   #packages .content {
@@ -28,6 +27,10 @@
 
     border: 2px solid grey;
     border-radius: 20px;
+  }
+
+  .add-ons-title {
+    font-family: "cinzel";
   }
 
   .add-on-list {

@@ -9,12 +9,12 @@ function Profile(props) {
 
   const collapsedState = () => {
     const firstParagraph = heroText[0];
-    return <p classname="paragraph">{firstParagraph}</p>;
+    return <p classname="profile-text">{firstParagraph}</p>;
   };
 
   const expandedState = () => {
     return heroText.map((paragraph, idx) => (
-      <p className="paragraph">{paragraph}</p>
+      <p className="profile-text">{paragraph}</p>
     ));
   };
 
@@ -28,7 +28,7 @@ function Profile(props) {
           </h2>
         </span>
 
-        <div className="hero-text">
+        <div className="profile-text">
           {expanded ? expandedState() : collapsedState()}
 
           <button onClick={() => setExpanded(!expanded)}>
