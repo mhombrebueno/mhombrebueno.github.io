@@ -3,19 +3,22 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 // CSS
-import "./index.css";
-import "./Variables";
+import "./global.css";
 
 // React Components
-import Navbar from "./components/Navbar";
-import Profile from "./pages/Profile";
-import Reviews from "./pages/Reviews";
-import Packages from "./pages/Packages";
-import Contacts from "./pages/Contacts";
-import Certifications from "./pages/Certifications";
-import { BUSINESS_NAME } from "./Variables";
+import Navbar from "./components/navbar/Navbar";
 
-import reportWebVitals from "./pages/reportWebVitals";
+// React Sections
+import Hero from "./sections/hero/Hero";
+import Bio from "./sections/bio/Bio";
+import Reviews from "./sections/reviews/Reviews";
+import Packages from "./sections/packages/Packages";
+import Contacts from "./sections/contacts/Contacts";
+import Certifications from "./sections/certifications/Certifications";
+
+import { BUSINESS_NAME } from "./global";
+
+import reportWebVitals from "./sections/reportWebVitals";
 
 document.title = BUSINESS_NAME;
 
@@ -24,7 +27,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Navbar title={BUSINESS_NAME} id="navbar" />
-    <Profile title="Miguel Hombrebueno" id="profile" />
+    <Hero title="Miguel Hombrebueno" id="hero" />
+    <Bio title="Bio" id="bio" />
     <Packages title="Packages" id="packages" />
     <Contacts title="Contacts" id="contacts" />
     <Reviews title="Reviews" id="reviews" />

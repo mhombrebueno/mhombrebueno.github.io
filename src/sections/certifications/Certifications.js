@@ -1,7 +1,7 @@
 import "./Certifications.css";
-import Section from "./Section";
+import Section from "../Section";
 
-import Certificate from "../components/Certificate";
+import Certificate from "../../components/certificate/Certificate";
 
 function Certifications(props) {
   return (

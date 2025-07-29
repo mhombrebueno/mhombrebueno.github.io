@@ -1,6 +1,7 @@
 import "./Reviews.css";
-import ReviewCard from "../components/ReviewCard";
-import Section from "./Section";
+
+import ReviewCard from "../../components/review-card/ReviewCard";
+import Section from "../Section";
 
 function Reviews(props) {
   return (

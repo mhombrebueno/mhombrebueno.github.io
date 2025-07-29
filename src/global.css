@@ -21,7 +21,7 @@
   --master-gradient: linear-gradient(var(--master), #190b1f);
 
   /* DIMENSIONS */
-  --navbar-height: 75px;
+  --navbar-height: 85px;
 }
 
 @font-face {
@@ -42,4 +42,65 @@
 @font-face {
   font-family: "Gantari";
   src: url(/public/fonts/Gantari/Gantari-VariableFont_wght.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-colour);
+  width: 100%;
+}
+
+body * {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--secondary-text);
+}
+
+.section-title {
+  color: gainsboro;
+  text-align: center;
+
+  border-bottom: 2px solid lightslategrey;
+  border-top: 2px solid lightslategrey;
+}
+
+/* PHONE SCREEN */
+@media (min-width: 370px) and (max-width: 1439px) {
+  .section {
+    align-items: center;
+    padding: 4rem 0px;
+  }
+
+  .section-title {
+    width: 90%;
+
+    font-size: 48px;
+    margin-bottom: 10rem;
+    padding: 3rem 0;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+/* PC SCREEN */
+@media (min-width: 1440px) {
+  .section {
+    padding: 200px;
+  }
+
+  .section-title {
+    font-size: 64px;
+    margin-bottom: 10rem;
+    padding: 6rem 0;
+  }
 }

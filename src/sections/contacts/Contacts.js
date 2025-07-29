@@ -1,5 +1,5 @@
-import ContactCard from "../components/ContactCard";
-import Section from "./Section";
+import ContactCard from "../../components/contact-card/ContactCard";
+import Section from "../Section";
 
 import "./Contacts.css";
 
@@ -9,7 +9,7 @@ import {
   INSTAGRAM_LINK,
   BUSINESS_TIKTOK,
   TIKTOK_LINK,
-} from "../Variables";
+} from "../../global";
 
 function Contacts(props) {
   return (

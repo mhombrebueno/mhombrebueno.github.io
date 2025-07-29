@@ -1,11 +1,10 @@
-import PackageCard from "../components/PackageCard";
-import AddOn from "../components/AddOn";
-import Section from "./Section";
-import PackageCalculator from "../PackageCalculator";
+import PackageCard from "../../components/package-card/PackageCard";
+import AddOn from "../../components/add-on/AddOn";
+import Section from "../Section";
+import PackageCalculator from "../../components/package-calculator/PackageCalculator";
 
-import { packages, addOns } from "../PackageData";
+import { packages, addOns } from "../../global";
 import "./Packages.css";
-import "../components/PackageCard.css";
 
 function Packages(props) {
   return (

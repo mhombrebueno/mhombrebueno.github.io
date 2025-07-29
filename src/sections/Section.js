@@ -1,5 +1,3 @@
-import React from "react";
-
 function Section({ title, id, children }) {
   return (
     <section id={id} className="section">

@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { BUSINESS_NAME } from "../Variables";
+import { BUSINESS_NAME } from "../../global";
 
 function Navbar() {
   return (
@@ -9,7 +9,7 @@ function Navbar() {
       </div>
 
       <div className="buttons">
-        <a href="#profile">Profile</a>
+        <a href="#bio">Bio</a>
         <a href="#packages">Packages</a>
         <a href="#contacts">Contacts</a>
         <a href="#reviews">Reviews</a>
