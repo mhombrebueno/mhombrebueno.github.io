@@ -30,18 +30,8 @@
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url(/public/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url(/public/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
-}
-
-@font-face {
-  font-family: "Gantari";
-  src: url(/public/fonts/Gantari/Gantari-VariableFont_wght.ttf);
+  font-family: "DMSans";
+  src: url(/public/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
 }
 
 html {
@@ -59,7 +49,7 @@ body * {
 }
 
 * {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "DMSans", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -71,7 +61,6 @@ body * {
   text-align: center;
 
   border-bottom: 2px solid lightslategrey;
-  border-top: 2px solid lightslategrey;
 }
 
 /* PHONE SCREEN */

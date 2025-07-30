@@ -14,11 +14,6 @@ import {
 function Contacts(props) {
   return (
     <Section {...props}>
-      <img
-        className="contact-img"
-        src="/imgs/miguel/portrait.jpg"
-        alt="Portrait"
-      />
       <div className="contact-list">
         <ContactCard
           icon="/icons/email.svg"

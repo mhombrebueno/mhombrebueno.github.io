@@ -17,8 +17,8 @@ function ReviewCard({ name, numStars, review }) {
   };
 
   const expandedState = () => {
-    return review.map((paragraph, idx) => (
-      <p className="review-text" key={idx}>
+    return review.map((paragraph, index) => (
+      <p className="review-text" key={index}>
         {paragraph}
       </p>
     ));
@@ -28,28 +28,24 @@ function ReviewCard({ name, numStars, review }) {
     <div className="review-card">
       <h1 className="review-name">{name}</h1>
       <h2 className="review-stars">
-        {Array.from({ length: numStars }).map((_, idx) => (
-          <span className="star" key={idx}>
+        {Array.from({ length: numStars }).map((_, index) => (
+          <span className="star" key={index}>
             &#9733;
           </span>
         ))}
+        <span className="num-stars">{numStars} / 5</span>
       </h2>
 
       {expanded ? expandedState() : collapsedState()}
 
       {isLong && (
         <button
-          className="toggle-button"
+          className="read-more-button"
           onClick={() => setExpanded(!expanded)}
         >
           {expanded ? "Read less" : "Read more"}
         </button>
       )}
-      {/* {displayedText.map((paragraph, idx) => (
-        <p className="review-text" key={idx}>
-          {paragraph}
-        </p>
-      ))} */}
     </div>
   );
 }

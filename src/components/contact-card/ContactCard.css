@@ -27,11 +27,14 @@
   gap: 10px;
 }
 
+.contact-link-icon {
+  width: 20px;
+}
+
 .action-icon {
-  padding: 3px 8px;
-  border: solid 2px black;
-  border-radius: 10px;
-  background-color: lightslategray;
+  padding: 8px 10px;
+  border: solid 2px lightslategrey;
+  border-radius: 5px;
 }
 
 .action-icon:hover {
@@ -64,7 +67,7 @@
     padding: 10px 0px;
     width: 500px;
 
-    font-size: 18px;
+    font-size: 20px;
 
     cursor: pointer;
   }

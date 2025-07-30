@@ -9,9 +9,11 @@ function Hero(props) {
     <Section {...props}>
       <div className="hero-panel">
         <h1 className="hero-title">Welcome to {BUSINESS_NAME}</h1>
-        <h2 className="hero-subtitle">
-          Personal Trainer | Nutrition Coach | Kinesiology Graduate
-        </h2>
+        <div className="hero-subtitle">
+          <h2>Personal Trainer.</h2>
+          <h2>Nutrition Coach.</h2>
+          <h2>Kinesiology Graduate.</h2>
+        </div>
       </div>
     </Section>
   );

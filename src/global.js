@@ -8,7 +8,7 @@ export const INSTAGRAM_LINK = "https://www.instagram.com/pivotal.fitness_/";
 export const BUSINESS_TIKTOK = "pivotal.fitness_";
 export const TIKTOK_LINK = "https://www.tiktok.com/@pivotal.fitness_";
 
-export const heroText = [
+export const bioText = [
   `I am a UBC Kinesiology graduate, competitive powerlifter, certified
    personal trainer, and more. But I didn’t start here...  `,
 

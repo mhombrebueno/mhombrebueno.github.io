@@ -1,12 +1,7 @@
 @import url("../../global.css");
 
 #navbar * {
-  font-family: "Gantari";
-  font-weight: 500;
-}
-
-#navbar h1 {
-  font-weight: bold;
+  font-family: "DMSans";
 }
 
 #navbar .buttons {

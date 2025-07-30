@@ -14,8 +14,13 @@
 }
 
 .hero-subtitle {
-  font-weight: 600;
-  margin-bottom: 1.5rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.hero-subtitle * {
+  font-size: 20px;
+  color: var(--tertiary-text);
 }
 
 /* PHONE SCREEN */
@@ -68,6 +73,6 @@
 
     background-color: black;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    border-radius: 5px;
   }
 }
