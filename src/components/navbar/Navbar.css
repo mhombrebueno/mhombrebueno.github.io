@@ -1,0 +1,53 @@
+@import url("../../global.css");
+
+#navbar * {
+  font-family: "DMSans";
+}
+
+#navbar .buttons {
+  flex-direction: row;
+  font-size: 18px;
+
+  gap: 50px;
+}
+
+#navbar a {
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  color: white;
+}
+
+#navbar a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* PC SCREEN */
+@media (min-width: 1440px) {
+  #navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: var(--navbar-height);
+    padding: 0px 100px;
+
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* PHONE SCREEN */
+@media (min-width: 370px) and (max-width: 1439px) {
+  #navbar {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #navbar .buttons {
+    display: none;
+  }
+}

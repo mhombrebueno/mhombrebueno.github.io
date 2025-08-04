@@ -1,0 +1,11 @@
+#certifications {
+  background-color: var(--secondary-colour);
+}
+
+@media (min-width: 1440px) {
+  #certifications .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

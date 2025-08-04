@@ -1,0 +1,28 @@
+.add-on {
+  font-size: 14px;
+}
+
+.add-on-price {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* PC SCREEN */
+@media (min-width: 1440px) {
+  .add-on {
+    padding: 0px;
+  }
+
+  .add-on-title,
+  .add-on-price {
+    margin-bottom: 10px;
+  }
+}
+
+/* PHONE SCREEN */
+@media (min-width: 370px) and (max-width: 1439px) {
+  .add-on {
+    width: 80%;
+    margin-bottom: 5rem;
+  }
+}

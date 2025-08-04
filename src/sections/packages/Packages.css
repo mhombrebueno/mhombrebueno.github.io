@@ -1,0 +1,51 @@
+@import url("../../global.css");
+
+#packages {
+  background-image: linear-gradient(
+    var(--secondary-colour) 70%,
+    var(--primary-colour)
+  );
+}
+
+/* PC SCREEN */
+@media (min-width: 1440px) {
+  #packages .content {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+  }
+
+  #add-ons {
+    width: 100%;
+    height: 150px;
+    justify-content: space-evenly;
+    text-align: center;
+
+    background-color: var(--add-ons);
+
+    border: 2px solid grey;
+    border-radius: 5px;
+  }
+
+  .add-ons-title {
+    font-family: "cinzel";
+  }
+
+  .add-on-list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* PHONE SCREEN */
+/* @media (min-width: 370px) and (max-width: 1439px) {
+  #packages .content {
+    align-items: center;
+  }
+
+  #add-ons .content {
+    flex-direction: column;
+  }
+} */

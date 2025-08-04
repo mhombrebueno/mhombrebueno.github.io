@@ -1,0 +1,25 @@
+#contacts {
+  background-color: var(--primary-colour);
+}
+
+/* PHONE SCREEN */
+@media (min-width: 370px) and (max-width: 1439px) {
+  #contacts .content {
+    align-items: center;
+  }
+}
+
+/* PC SCREEN */
+@media (min-width: 1440px) {
+  #contacts .content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+
+    font-size: 20px;
+  }
+
+  .contact-list {
+    justify-content: space-around;
+  }
+}
