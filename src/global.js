@@ -1,12 +1,12 @@
-export const BUSINESS_NAME = "Pivotal Fitness";
+export const BUSINESS_NAME = "Ignite Fitness";
 
 export const BUSINESS_EMAIL = "ignitefitness.mh@yahoo.com";
 
 export const BUSINESS_INSTAGRAM = "ignite.fitness.mh";
-export const INSTAGRAM_LINK = "https://www.instagram.com/ignite.fitness.mh";
+export const INSTAGRAM_LINK = `https://www.instagram.com/${BUSINESS_INSTAGRAM}`;
 
 export const BUSINESS_TIKTOK = "ignite.fitness.mh";
-export const TIKTOK_LINK = "https://www.tiktok.com/@ignite.fitness.mh";
+export const TIKTOK_LINK = `https://www.tiktok.com/@${BUSINESS_TIKTOK}`;
 
 export const bioText = [
   `I am a UBC Kinesiology graduate, competitive powerlifter, certified
