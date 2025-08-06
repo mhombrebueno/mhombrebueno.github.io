@@ -4,28 +4,63 @@
   background-color: var(--secondary-colour);
 }
 
-#bio .content {
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.bio-name {
-  font-size: 64px;
-}
-
-.bio-paragraph {
-  font-size: 18px;
-  margin-top: 1rem;
-  width: 700px;
-}
-
 .portrait {
-  width: 400px;
-
   border: 2px solid white;
   border-radius: 15px;
 }
 
-.portrait-subtitle {
-  margin-top: 1rem;
+/* PC SCREEN */
+@media (min-width: 1440px) {
+  #bio .content {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+
+  .bio-name {
+    font-size: 64px;
+  }
+
+  .bio-paragraph {
+    font-size: 18px;
+    margin-top: 1rem;
+    width: 700px;
+  }
+
+  .portrait {
+    width: 400px;
+  }
+
+  .portrait-subtitle {
+    margin-top: 1rem;
+  }
+}
+
+/* PHONE SCREEN */
+@media (min-width: 370px) and (max-width: 1439px) {
+  #bio .content * {
+    align-items: center;
+  }
+
+  #bio .content {
+    align-items: center;
+  }
+
+  .bio-name {
+    margin-top: 2rem;
+    font-size: 32px;
+  }
+
+  .bio-paragraph {
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+
+  .portrait {
+    width: 60%;
+  }
+
+  .portrait-subtitle {
+    font-size: 18px;
+    margin-top: 0.5rem;
+  }
 }

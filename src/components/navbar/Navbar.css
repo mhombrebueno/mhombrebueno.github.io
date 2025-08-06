@@ -63,4 +63,8 @@
   #navbar .buttons {
     display: none;
   }
+
+  .social-link {
+    display: none;
+  }
 }

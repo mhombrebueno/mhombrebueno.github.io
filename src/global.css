@@ -67,7 +67,7 @@ body * {
 @media (min-width: 370px) and (max-width: 1439px) {
   .section {
     align-items: center;
-    padding: 4rem 0px;
+    padding: 4rem 20px;
   }
 
   .section-title {

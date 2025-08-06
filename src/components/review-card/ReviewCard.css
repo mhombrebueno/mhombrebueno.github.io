@@ -54,3 +54,10 @@
 
   border: none;
 }
+/* PC SCREEN */
+@media (min-width: 1440px) {
+}
+
+/* PHONE SCREEN */
+@media (min-width: 370px) and (max-width: 1439px) {
+}
