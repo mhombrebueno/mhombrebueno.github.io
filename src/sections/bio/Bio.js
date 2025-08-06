@@ -21,7 +21,7 @@ function Bio(props) {
           </div>
         </div>
         <div className="bio-text">
-          <h1 className="bio-name">Miguel Hombrebueno</h1>
+          <h1 className="bio-name">I'm Miguel Hombrebueno</h1>
           {bioText.map((paragraph, index) => (
             <p className="bio-paragraph" key={index}>
               {paragraph}

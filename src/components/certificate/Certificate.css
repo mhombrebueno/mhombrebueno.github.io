@@ -39,7 +39,7 @@
 }
 
 .full-screen-icon {
-  width: 80px;
+  width: 48px;
 }
 
 .fullscreen-overlay {
@@ -77,6 +77,7 @@
   color: black;
 
   cursor: pointer;
+  background-color: lightcoral;
 }
 
 .certificate-frame:hover .view-button {
