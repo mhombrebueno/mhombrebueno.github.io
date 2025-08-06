@@ -21,6 +21,15 @@
   border-bottom: 2px solid white;
 }
 
+.business-info {
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.social-link {
+  filter: invert(1);
+}
+
 /* PC SCREEN */
 @media (min-width: 1440px) {
   #navbar {
@@ -37,6 +46,10 @@
 
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
+  }
+
+  .social-link {
+    width: 26px;
   }
 }
 

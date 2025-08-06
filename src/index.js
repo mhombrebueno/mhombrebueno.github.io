@@ -13,7 +13,6 @@ import Hero from "./sections/hero/Hero";
 import Bio from "./sections/bio/Bio";
 import Reviews from "./sections/reviews/Reviews";
 import Packages from "./sections/packages/Packages";
-import Contacts from "./sections/contacts/Contacts";
 import Certifications from "./sections/certifications/Certifications";
 
 import { BUSINESS_NAME } from "./global";
@@ -30,7 +29,6 @@ root.render(
     <Hero title="Miguel Hombrebueno" id="hero" />
     <Bio title="Bio" id="bio" />
     <Packages title="Packages" id="packages" />
-    {/* <Contacts title="Contacts" id="contacts" /> */}
     <Reviews title="Reviews" id="reviews" />
     <Certifications title="Certifications" id="certifications" />
   </React.StrictMode>

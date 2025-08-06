@@ -4,8 +4,15 @@ import { BUSINESS_NAME } from "../../global";
 function Navbar() {
   return (
     <div id="navbar">
-      <div>
+      <div className="business-info">
         <h1>{BUSINESS_NAME}</h1>
+
+        <img
+          className="social-link"
+          src="/icons/instagram.svg"
+          alt="Instagram"
+        />
+        <img className="social-link" src="/icons/tiktok.svg" alt="TikTok" />
       </div>
 
       <div className="buttons">
