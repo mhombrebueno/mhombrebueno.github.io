@@ -30,7 +30,7 @@ root.render(
     <Hero title="Miguel Hombrebueno" id="hero" />
     <Bio title="Bio" id="bio" />
     <Packages title="Packages" id="packages" />
-    <Contacts title="Contacts" id="contacts" />
+    {/* <Contacts title="Contacts" id="contacts" /> */}
     <Reviews title="Reviews" id="reviews" />
     <Certifications title="Certifications" id="certifications" />
   </React.StrictMode>

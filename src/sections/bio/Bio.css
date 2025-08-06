@@ -4,24 +4,28 @@
   background-color: var(--secondary-colour);
 }
 
-.bio-paragraph {
-  margin-top: 20px;
-}
-
-.bio-text {
-  padding-left: 40px;
+#bio .content {
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .bio-name {
-  font-size: 48px;
+  font-size: 64px;
+}
+
+.bio-paragraph {
+  font-size: 18px;
+  margin-top: 1rem;
+  width: 700px;
 }
 
 .portrait {
   width: 400px;
+
   border: 2px solid white;
   border-radius: 15px;
 }
 
-.portrait-card {
-  flex-direction: row;
+.portrait-subtitle {
+  margin-top: 1rem;
 }

@@ -82,6 +82,7 @@
 
 .certificate-frame:hover .view-button {
   opacity: 1;
+  cursor: pointer;
   pointer-events: auto;
 }
 

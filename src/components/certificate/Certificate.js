@@ -1,5 +1,5 @@
 import "./Certificate.css";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 function Certificate({ title, img }) {
   const [showFullView, setShowFullView] = useState(false);
