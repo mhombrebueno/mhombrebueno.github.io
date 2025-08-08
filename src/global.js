@@ -8,21 +8,23 @@ export const INSTAGRAM_LINK = `https://www.instagram.com/${BUSINESS_INSTAGRAM}`;
 export const BUSINESS_TIKTOK = "ignite.fitness.mh";
 export const TIKTOK_LINK = `https://www.tiktok.com/@${BUSINESS_TIKTOK}`;
 
+export const bioIntro = `I am a UBC Kinesiology Graduate, Competitive Powerlifter, Certified
+   Personal Trainer. But I didn’t start here...`;
+
 export const bioText = [
-  `I am a UBC Kinesiology graduate, competitive powerlifter, certified
-   personal trainer, and more. But I didn’t start here...  `,
+  `As one of the shortest guys in the room, I struggled with confidence growing up. 
+   An injury left me feeling disconnected from my body and unsure of myself.
+   That's when I found the gym.`,
 
-  `Growing up, I struggled with confidence, especially as one of the
-   shortest guys in the room. After suffering an injury that left me
-   sidelined, I felt even more disconnected from my body and unsure of
-   myself. That’s when I found the gym. What started as rehab turned into
-   a lifelong passion. Lifting gave me more than physical strength, it
-   helped me rebuild my mindset and redefine what it meant to feel powerful.`,
+  `What started as rehab turned into a lifelong passion.
+   Along with physical strength, lifting also helped me rebuild my mindset and redefine
+   what it meant to feel powerful. I found confidence, resilience, and a community
+   that thrives on progress over perfection.`,
 
-  `Through powerlifting, I found confidence, resilience, and a community
-   that thrives on progress over perfection. Now, I coach with that same
-   mindset: helping others overcome self-doubt, bounce back from injury,
-   and build lasting strength—physically and mentally.`,
+  `Now I coach with that same mindset:`,
+  `help others overcome self-doubt`,
+  `bounce back from injury`,
+  `build lasting strength-physicaly and mentally`,
 
   `Whether you are just starting or chasing your next PR, I’ll help you
    train with purpose, backed by science and real experience. No matter

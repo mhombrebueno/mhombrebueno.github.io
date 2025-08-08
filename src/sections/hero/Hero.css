@@ -2,25 +2,33 @@
 
 #hero.section {
   margin: 0;
-  text-align: center;
 }
 
 #hero .section-title {
   display: none;
 }
 
-.hero-title {
-  margin-bottom: 2rem;
+.hero-welcome {
+  font-size: 34px;
+  font-weight: normal;
+}
+
+.hero-name {
+  flex-direction: row;
+  margin-bottom: 3rem;
+  gap: 2rem;
+
+  font-size: 132px;
 }
 
 .hero-subtitle {
   flex-direction: row;
-  justify-content: space-evenly;
+  gap: 100px;
 }
 
 .hero-subtitle * {
-  font-size: 20px;
-  color: var(--tertiary-text);
+  font-size: 24px;
+  font-weight: normal;
 }
 
 /* PHONE SCREEN */
@@ -57,16 +65,12 @@
     background-repeat: no-repeat;
   }
 
-  .hero-title {
-    font-size: 64px;
-  }
-
   .hero-subtitle {
     font-size: 20px;
   }
 
   .hero-panel {
-    width: 1000px;
+    width: fit-content;
     padding: 50px;
     margin-top: var(--navbar-height);
     z-index: 1;

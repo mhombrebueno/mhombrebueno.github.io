@@ -1,6 +1,6 @@
 .certificate {
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 350px;
 }
 
 .certificate-title {
@@ -87,7 +87,7 @@
 }
 
 .certificate-img {
-  width: 500px;
+  width: 450px;
   border: solid 1px grey;
 }
 

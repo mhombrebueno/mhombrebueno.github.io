@@ -12,12 +12,6 @@ function PackageCard({ title, icon, rewards, payment, durations, prices }) {
     </div>
   );
 
-  const TapToView = (
-    <div className="small-text">
-      {flipped ? "Tap to view Rewards" : "Tap to view Prices"}
-    </div>
-  );
-
   return (
     <div
       id={title.toLowerCase()}
@@ -37,7 +31,6 @@ function PackageCard({ title, icon, rewards, payment, durations, prices }) {
             ))}
           </ul>
         </div>
-        {TapToView}
       </div>
 
       <div className="back">
@@ -54,7 +47,6 @@ function PackageCard({ title, icon, rewards, payment, durations, prices }) {
             ))}
           </ul>
         </div>
-        {TapToView}
       </div>
     </div>
   );

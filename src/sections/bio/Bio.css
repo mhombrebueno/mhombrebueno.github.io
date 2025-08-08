@@ -5,33 +5,46 @@
 }
 
 .portrait {
-  border: 2px solid white;
   border-radius: 15px;
+}
+
+.portrait-subtitle {
+  color: lightblue;
+}
+
+.signiature {
+  font-size: 24px;
+  padding: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* PC SCREEN */
 @media (min-width: 1440px) {
-  #bio .content {
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
+  .bio-name {
+    font-size: 72px;
+    margin-bottom: 6rem;
   }
 
-  .bio-name {
-    font-size: 64px;
+  .bio-content {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .bio-paragraph {
     font-size: 18px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 700px;
   }
 
   .portrait {
-    width: 400px;
+    width: 325px;
+    margin-bottom: 50px;
   }
 
   .portrait-subtitle {
+    font-size: 18px;
     margin-top: 1rem;
+    margin-left: 5rem;
   }
 }
 

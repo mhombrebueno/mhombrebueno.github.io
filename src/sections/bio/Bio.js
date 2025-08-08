@@ -7,25 +7,28 @@ import "./Bio.css";
 function Bio(props) {
   return (
     <Section {...props}>
-      <div>
-        <img
-          className="portrait"
-          src="/imgs/miguel/portrait.jpg"
-          alt="Portrait"
-        />
-        <div>
+      <div className="bio-content">
+        <div className="portrait-card">
+          <img
+            className="portrait"
+            src="/imgs/miguel/portrait.jpg"
+            alt="Portrait"
+          />
+
+          <h2>Certified:</h2>
           <h2 className="portrait-subtitle">UBC Kinesiology</h2>
           <h2 className="portrait-subtitle">Personal Trainer</h2>
           <h2 className="portrait-subtitle">BCPA Powerlifter</h2>
         </div>
-      </div>
-      <div className="bio-text">
-        <h1 className="bio-name">I'm Miguel Hombrebueno</h1>
-        {bioText.map((paragraph, index) => (
-          <p className="bio-paragraph" key={index}>
-            {paragraph}
-          </p>
-        ))}
+
+        <div className="bio-text">
+          {bioText.map((paragraph, index) => (
+            <p className="bio-paragraph" key={index}>
+              {paragraph}
+            </p>
+          ))}
+          <div className="signiature">Miguel</div>
+        </div>
       </div>
     </Section>
   );

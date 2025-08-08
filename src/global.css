@@ -7,7 +7,7 @@
   /* TEXT COLOURS */
   --primary-text: #ffe7cc;
   --secondary-text: #ffffff;
-  --tertiary-text: #ccebe9;
+  --tertiary-text: #ff6f47;
 
   /* RANK COLOURS */
   --gold: #d1995a;
@@ -34,6 +34,11 @@
   src: url(/public/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
 }
 
+@font-face {
+  font-family: "Grotesk";
+  src: url(/public/fonts/Grotesk/HostGrotesk-VariableFont_wght.ttf);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -49,7 +54,7 @@ body * {
 }
 
 * {
-  font-family: "DMSans", Arial, Helvetica, sans-serif;
+  font-family: "Grotesk", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -58,9 +63,10 @@ body * {
 
 .section-title {
   color: gainsboro;
-  text-align: center;
+}
 
-  border-bottom: 2px solid lightslategrey;
+.highlighted-text {
+  color: var(--tertiary-text);
 }
 
 /* PHONE SCREEN */
@@ -84,12 +90,11 @@ body * {
 /* PC SCREEN */
 @media (min-width: 1440px) {
   .section {
-    padding: 200px;
+    padding: 300px 200px;
   }
 
   .section-title {
-    font-size: 64px;
-    margin-bottom: 10rem;
-    padding: 6rem 0;
+    font-size: 84px;
+    padding: 8rem 0;
   }
 }

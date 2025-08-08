@@ -26,8 +26,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Navbar title={BUSINESS_NAME} id="navbar" />
-    <Hero title="Miguel Hombrebueno" id="hero" />
-    <Bio title="Bio" id="bio" />
+    <Hero title="Hero" id="hero" />
+    <Bio title="Miguel Hombrebueno" id="bio" />
     <Packages title="Packages" id="packages" />
     <Reviews title="Reviews" id="reviews" />
     <Certifications title="Certifications" id="certifications" />

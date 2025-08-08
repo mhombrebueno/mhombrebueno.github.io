@@ -1,20 +1,25 @@
 @import url("../../global.css");
 
 #navbar * {
-  font-family: "DMSans";
+  font-family: "Grotesk";
+  color: lightgrey;
 }
 
 #navbar .buttons {
   flex-direction: row;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bolder;
 
   gap: 50px;
+}
+
+#navbar .business-name {
+  font-size: 50px;
 }
 
 #navbar a {
   border-bottom: 2px solid transparent;
   text-decoration: none;
-  color: white;
 }
 
 #navbar a:hover {
@@ -23,7 +28,6 @@
 
 .business-info {
   flex-direction: row;
-  gap: 2rem;
 }
 
 .social-link {
@@ -42,14 +46,18 @@
     height: var(--navbar-height);
     padding: 0px 100px;
 
-    color: white;
-
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
   }
 
+  .social-links {
+    flex-direction: row;
+    margin-left: 80px;
+    gap: 20px;
+  }
+
   .social-link {
-    width: 26px;
+    width: 24px;
   }
 }
 
