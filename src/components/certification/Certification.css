@@ -1,6 +1,5 @@
 .certificate {
   align-items: center;
-  margin-bottom: 350px;
 }
 
 .certificate-title {
@@ -15,7 +14,7 @@
   padding: 20px;
   background-color: white;
 
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.8);
 
   transition: opacity 0.3s ease;
 }
@@ -91,17 +90,30 @@
   border: solid 1px grey;
 }
 
-/* PC SCREEN */
+/*
+
+PC SCREEN
+
+*/
 @media (min-width: 1440px) {
   .certificate {
     width: 50%;
+    margin-bottom: 350px;
   }
 }
 
-/* PHONE SCREEN */
+/*
+
+PHONE SCREEN
+
+*/
 @media (min-width: 370px) and (max-width: 1439px) {
   .certificate {
-    width: 80%;
+    margin-bottom: 150px;
+  }
+
+  .certificate-frame {
+    border: solid 20px #45321d;
   }
 
   .certificate-img {

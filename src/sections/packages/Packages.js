@@ -1,28 +1,29 @@
-import PackageCard from "../../components/package-card/PackageCard";
-import AddOn from "../../components/add-on/AddOn";
 import Section from "../Section";
-import PackageCalculator from "../../components/package-calculator/PackageCalculator";
+import Package from "../../components/package/Package";
+import AddOn from "../../components/add-on/AddOn";
+import PriceCalculator from "../../components/price-calculator/PriceCalculator";
 
-import { packages, addOns } from "../../global";
+import { PACKAGES, ADD_ONS } from "../../constants";
 import "./Packages.css";
 
 function Packages(props) {
   return (
     <Section {...props}>
-      {/* <div></div> */}
-      {packages.map((pack) => (
-        <PackageCard key={pack.id} {...pack} />
-      ))}
+      <div id="package-ranks">
+        {PACKAGES.map((pack) => (
+          <Package key={pack.id} {...pack} />
+        ))}
+      </div>
 
       <div id="add-ons">
-        <h2 className="add-ons-title">Add Ons</h2>
-        <div className="add-on-list">
-          {addOns.map((addOn) => (
+        <h2 className="title">Add Ons</h2>
+        <div className="list">
+          {ADD_ONS.map((addOn) => (
             <AddOn key={addOn.id} {...addOn} />
           ))}
         </div>
       </div>
-      <PackageCalculator />
+      <PriceCalculator />
     </Section>
   );
 }

@@ -1,27 +1,15 @@
 import "./Navbar.css";
-import { BUSINESS_NAME } from "../../global";
+import { BUSINESS_NAME, SECTIONS } from "../../constants";
 
 function Navbar() {
   return (
     <div id="navbar">
-      <div className="business-info">
-        <h1 className="business-name">{BUSINESS_NAME}</h1>
-
-        <div className="social-links">
-          <img
-            className="social-link"
-            src="/icons/instagram.svg"
-            alt="Instagram"
-          />
-          <img className="social-link" src="/icons/tiktok.svg" alt="TikTok" />
-        </div>
-      </div>
+      <h1 className="business-name">{BUSINESS_NAME}</h1>
 
       <div className="buttons">
-        <a href="#bio">Bio</a>
-        <a href="#packages">Packages</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#certifications">Certifications</a>
+        {SECTIONS.map((section) => (
+          <a href={`#${section.id}`}>{section.title}</a>
+        ))}
       </div>
     </div>
   );

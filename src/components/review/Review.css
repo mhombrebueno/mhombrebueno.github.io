@@ -1,0 +1,88 @@
+.review {
+  background-color: whitesmoke;
+  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.8);
+  border: solid rgba(255, 255, 255, 0.1) 2px;
+  border-radius: 5px;
+}
+
+.review .name {
+  color: black;
+  font-size: 18px;
+  margin: 0 0 0.2rem 0;
+}
+
+.review .stars {
+  flex-direction: row;
+  border-bottom: 1px solid gainsboro;
+}
+
+.star {
+  color: goldenrod;
+  font-size: 16px;
+}
+
+.num-stars {
+  font-size: 12px;
+  font-weight: 400;
+
+  color: grey;
+  justify-content: center;
+
+  margin-left: 10px;
+  padding-top: 4px;
+}
+
+.review .paragraph {
+  color: black;
+}
+
+.read-more-button {
+  margin-top: 20px;
+  padding: 5px;
+
+  color: black;
+  background-color: transparent;
+
+  border: none;
+  cursor: pointer;
+}
+
+/*
+
+PHONE SCREEN
+
+*/
+@media (min-width: 370px) and (max-width: 1439px) {
+  .review {
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .review .paragraph {
+    margin-top: 0.5rem;
+  }
+
+  .review .stars {
+    padding-bottom: 0.4rem;
+  }
+}
+
+/*
+
+PC SCREEN
+
+*/
+@media (min-width: 1440px) {
+  .review {
+    width: 700px;
+    padding: 30px 40px;
+  }
+
+  .review .stars {
+    padding-bottom: 0.8rem;
+  }
+
+  .review .paragraph {
+    margin-top: 1rem;
+  }
+}

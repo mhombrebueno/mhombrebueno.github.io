@@ -1,19 +1,19 @@
-import "./PackageCalculator.css";
+import "./PriceCalculator.css";
 
-import { packages, addOns } from "../../global";
+import { PACKAGES, ADD_ONS } from "../../constants";
 
-function PackageCalculator() {
+function PriceCalculator() {
   return (
     <div id="package-calculator">
       <div className="rank-buttons">
-        {packages.map((pack, index) => (
+        {PACKAGES.map((pack, index) => (
           <div key={index} className="rank-button">
             {pack.title}
           </div>
         ))}
       </div>
       <div className="add-on-buttons">
-        {addOns.map((addOn, index) => (
+        {ADD_ONS.map((addOn, index) => (
           <div key={index}>{addOn.title}</div>
         ))}
       </div>
@@ -21,4 +21,4 @@ function PackageCalculator() {
   );
 }
 
-export default PackageCalculator;
+export default PriceCalculator;

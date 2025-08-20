@@ -4,76 +4,156 @@
   background-color: var(--secondary-colour);
 }
 
-.portrait {
+#bio-hero .portrait {
   border-radius: 15px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
 }
 
-.portrait-subtitle {
-  color: lightblue;
+#bio-hero .name {
+  flex-direction: row;
+  gap: 1rem;
+
+  font-size: 72px;
+  margin-bottom: 1rem;
 }
 
-.signiature {
-  font-size: 24px;
-  padding: 40px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+#bio-text .cover.fade-out {
+  opacity: 0;
 }
 
-/* PC SCREEN */
-@media (min-width: 1440px) {
-  .bio-name {
-    font-size: 72px;
-    margin-bottom: 6rem;
-  }
-
-  .bio-content {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .bio-paragraph {
-    font-size: 18px;
-    margin-top: 2rem;
-    width: 700px;
-  }
-
-  .portrait {
-    width: 325px;
-    margin-bottom: 50px;
-  }
-
-  .portrait-subtitle {
-    font-size: 18px;
-    margin-top: 1rem;
-    margin-left: 5rem;
-  }
+#bio-text .cover.fade-in {
+  opacity: 1;
 }
 
-/* PHONE SCREEN */
+#bio-text .teaser {
+  transition: opacity 1000 ease;
+}
+
+#bio .read-more-button {
+  width: 100%;
+  padding: 10px 20px;
+  color: var(--tertiary-text);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#bio-text {
+  justify-content: space-evenly;
+}
+
+/*
+
+PHONE SCREEN
+
+*/
 @media (min-width: 370px) and (max-width: 1439px) {
-  #bio .content * {
+  #bio-hero {
+    align-items: center;
+  }
+
+  #bio-hero .portrait {
+    width: 60%;
+  }
+
+  #bio-hero .name {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 32px;
+  }
+
+  #bio-hero .subtitle {
+    font-size: 12px;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  #bio-text .cover {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    align-items: center;
+
+    background-color: var(--secondary-colour);
+    transition: opacity 1000ms;
+  }
+
+  #bio-text {
+    position: relative;
+    align-items: center;
+  }
+
+  #bio-text .teaser {
+    margin-top: 5rem;
+  }
+
+  #bio-text .paragraph {
+    font-size: 16px;
+    margin-top: 1rem;
+    width: 320px;
+  }
+}
+
+/*
+
+PC SCREEN
+
+*/
+@media (min-width: 1440px) {
+  #bio.section {
+    justify-content: center;
     align-items: center;
   }
 
   #bio .content {
-    align-items: center;
+    width: fit-content;
   }
 
-  .bio-name {
-    margin-top: 2rem;
-    font-size: 32px;
+  #bio-hero {
+    flex-direction: row;
+    justify-content: center;
+
+    width: fit-content;
+    margin-bottom: 60px;
   }
 
-  .bio-paragraph {
-    font-size: 16px;
+  #bio-hero .portrait {
+    width: 325px;
+    margin-right: 100px;
+  }
+
+  #bio-hero .subtitle {
+    font-size: 18px;
     margin-top: 1rem;
   }
 
-  .portrait {
-    width: 60%;
+  #bio-text .cover {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--secondary-colour);
+    transition: opacity 1000ms ease;
   }
 
-  .portrait-subtitle {
-    font-size: 18px;
-    margin-top: 0.5rem;
+  #bio-text {
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #bio-text .paragraph {
+    font-size: 16px;
+    margin-top: 1.5rem;
+    width: 500px;
   }
 }

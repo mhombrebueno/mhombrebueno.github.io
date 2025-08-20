@@ -5,19 +5,10 @@ import ReactDOM from "react-dom/client";
 // CSS
 import "./global.css";
 
-// React Components
-import Navbar from "./components/navbar/Navbar";
-
-// React Sections
-import Hero from "./sections/hero/Hero";
-import Bio from "./sections/bio/Bio";
-import Reviews from "./sections/reviews/Reviews";
-import Packages from "./sections/packages/Packages";
-import Certifications from "./sections/certifications/Certifications";
-
-import { BUSINESS_NAME } from "./global";
+import { BUSINESS_NAME, SECTIONS } from "./constants";
 
 import reportWebVitals from "./sections/reportWebVitals";
+import Navbar from "./components/navbar/Navbar";
 
 document.title = BUSINESS_NAME;
 
@@ -25,12 +16,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <Navbar title={BUSINESS_NAME} id="navbar" />
-    <Hero title="Hero" id="hero" />
-    <Bio title="Miguel Hombrebueno" id="bio" />
-    <Packages title="Packages" id="packages" />
-    <Reviews title="Reviews" id="reviews" />
-    <Certifications title="Certifications" id="certifications" />
+    <Navbar />
+    {SECTIONS.map((section) => {
+      const Component = section.component;
+      return <Component {...section} />;
+    })}
   </React.StrictMode>
 );
 

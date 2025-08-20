@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import "./ReviewCard.css";
+import "./Review.css";
 
-function ReviewCard({ name, numStars, review }) {
+function Review({ name, numStars, review }) {
   const [expanded, setExpanded] = useState(false);
 
   const isLong = review.length > 1;
@@ -10,7 +10,7 @@ function ReviewCard({ name, numStars, review }) {
   const collapsedState = () => {
     const firstParagraph = review[0];
     return (
-      <p className="review-text">
+      <p className="paragraph">
         {isLong ? firstParagraph + ".." : firstParagraph}
       </p>
     );
@@ -18,16 +18,16 @@ function ReviewCard({ name, numStars, review }) {
 
   const expandedState = () => {
     return review.map((paragraph, index) => (
-      <p className="review-text" key={index}>
+      <p className="paragraph" key={index}>
         {paragraph}
       </p>
     ));
   };
 
   return (
-    <div className="review-card">
-      <h1 className="review-name">{name}</h1>
-      <h2 className="review-stars">
+    <div className="review">
+      <h1 className="name">{name}</h1>
+      <h2 className="stars">
         {Array.from({ length: numStars }).map((_, index) => (
           <span className="star" key={index}>
             &#9733;
@@ -50,4 +50,4 @@ function ReviewCard({ name, numStars, review }) {
   );
 }
 
-export default ReviewCard;
+export default Review;

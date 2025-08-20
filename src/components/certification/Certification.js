@@ -1,7 +1,7 @@
-import "./Certificate.css";
+import "./Certification.css";
 import { useState } from "react";
 
-function Certificate({ title, img }) {
+function Certification({ title, img }) {
   const [showFullView, setShowFullView] = useState(false);
 
   const openFullView = () => {
@@ -40,4 +40,4 @@ function Certificate({ title, img }) {
   );
 }
 
-export default Certificate;
+export default Certification;

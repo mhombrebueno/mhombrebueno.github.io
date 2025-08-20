@@ -1,0 +1,5 @@
+#contacts .content {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}

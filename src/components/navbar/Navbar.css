@@ -1,20 +1,17 @@
 @import url("../../global.css");
 
+#navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  height: var(--navbar-height);
+}
+
 #navbar * {
   font-family: "Grotesk";
   color: lightgrey;
-}
-
-#navbar .buttons {
-  flex-direction: row;
-  font-size: 20px;
-  font-weight: bolder;
-
-  gap: 50px;
-}
-
-#navbar .business-name {
-  font-size: 50px;
 }
 
 #navbar a {
@@ -25,54 +22,52 @@
 #navbar a:hover {
   border-bottom: 2px solid white;
 }
+/*
 
-.business-info {
-  flex-direction: row;
-}
+PHONE SCREEN
 
-.social-link {
-  filter: invert(1);
-}
-
-/* PC SCREEN */
-@media (min-width: 1440px) {
-  #navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    height: var(--navbar-height);
-    padding: 0px 100px;
-
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-  }
-
-  .social-links {
-    flex-direction: row;
-    margin-left: 80px;
-    gap: 20px;
-  }
-
-  .social-link {
-    width: 24px;
-  }
-}
-
-/* PHONE SCREEN */
+*/
 @media (min-width: 370px) and (max-width: 1439px) {
   #navbar {
     justify-content: center;
     align-items: center;
   }
 
-  #navbar .buttons {
-    display: none;
+  #navbar .business-name {
+    margin-bottom: 0.5rem;
   }
 
-  .social-link {
-    display: none;
+  #navbar .buttons {
+    width: 100%;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: bolder;
+    justify-content: space-evenly;
+  }
+}
+
+/*
+
+PC SCREEN
+
+*/
+@media (min-width: 1440px) {
+  #navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+  }
+
+  #navbar .buttons {
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: bolder;
+
+    gap: 50px;
+  }
+
+  #navbar .business-name {
+    font-size: 50px;
   }
 }
