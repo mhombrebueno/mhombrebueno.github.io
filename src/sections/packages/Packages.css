@@ -7,11 +7,6 @@
   );
 }
 
-#packages .content {
-  justify-content: center;
-  align-items: center;
-}
-
 #package-ranks {
   width: 100%;
 }

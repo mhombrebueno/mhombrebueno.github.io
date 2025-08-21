@@ -1,18 +1,18 @@
+@import url("../../global.css");
+
 .contact {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-
   padding: 25px;
 
-  border: 2px solid grey;
   border-radius: 5px;
   background-color: var(--add-ons);
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
 }
 
-.contact .icon {
-  filter: invert(1);
+.contact-icon {
+  width: 50px;
 }
 
 /*
@@ -24,6 +24,7 @@ PHONE SCREEN
   .contact {
     width: 100%;
   }
+
   .contact .icon {
     width: 32px;
   }
@@ -43,16 +44,7 @@ PC SCREEN
 */
 @media (min-width: 1440px) {
   .contact {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-
     width: 50%;
-
-    border: 2px solid grey;
-    border-radius: 5px;
-    background-color: var(--add-ons);
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
   }
 
   .contact .icon {

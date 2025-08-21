@@ -126,19 +126,19 @@ export const ADD_ONS = [
 export const CONTACTS = [
   {
     id: "email",
-    icon: "/icons/email.svg",
+    icon: "/icons/email.png",
     handle: "ignitefitness.mh@yahoo.com",
     link: "mailto:ignitefitness.mh@yahoo.com",
   },
   {
     id: "instagram",
-    icon: "/icons/instagram.svg",
+    icon: "/icons/instagram.png",
     handle: "ignite.fitness.mh",
     link: `https://www.instagram.com/ignite.fitness.mh`,
   },
   {
-    id: "tik-tok",
-    icon: "/icons/tiktok.svg",
+    id: "tiktok",
+    icon: "/icons/tiktok.png",
     handle: "ignite.fitness.mh",
     link: "https://www.tiktok.com/@ignite.fitness.mh",
   },

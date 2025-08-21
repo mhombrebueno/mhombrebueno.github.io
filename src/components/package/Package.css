@@ -18,20 +18,27 @@
   background-image: var(--master-gradient);
 }
 
+.package-container {
+  width: 25%;
+  perspective: 1000px;
+}
+
 .package {
   position: relative;
-  width: 25%;
   height: 550px;
 
   border: 2px solid;
 
   transition: transform 1500ms;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+
   cursor: pointer;
 }
 
 .package-icon-container {
   position: absolute;
+  top: 0;
   width: 100%;
   align-items: center;
 }
@@ -41,51 +48,57 @@
   opacity: 0.4;
 }
 
+.bullet-point {
+  color: lightgreen;
+}
+
 .package-title {
   font-family: "Cinzel";
   font-size: 40px;
   font-weight: 700;
-  color: var(--secondary-text);
-
   text-align: center;
+  color: var(--secondary-text);
+  text-transform: uppercase;
 
   margin-top: 100px;
+  margin-bottom: 1rem;
 
   z-index: 1;
-
-  text-transform: uppercase;
 }
 
-.package h2 {
+.package-header {
   font-weight: 600;
   font-size: 16px;
   z-index: 1;
+  margin-bottom: 1rem;
 }
 
-.package li {
+.package-item {
   flex-direction: row;
   font-size: 12px;
   margin-bottom: 1.2rem;
 }
 
-.package .items {
-  justify-content: space-between;
-  height: 356px;
-  padding: 0px 22px 40px 22px;
+.package-items {
+  height: 285px;
+  padding: 0px 22px 0px 22px;
 }
 
 .package-small-text {
   text-align: center;
   font-size: 11px;
+  margin-top: 20px;
 }
 
 .package-front,
 .package-back {
   position: absolute;
-  justify-content: space-between;
   width: 100%;
   height: 100%;
+  gap: 1rem;
+
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .package-front ul * {
@@ -94,15 +107,7 @@
 
 .package-back {
   transform: rotateY(180deg);
-}
-
-.package-back ul,
-.package-back li {
-  margin-bottom: 0.5rem;
-}
-
-.package-back li {
-  font-size: 14px;
+  -webkit-transform: rotateY(180deg);
 }
 
 .package .price {
@@ -111,11 +116,16 @@
 
 .package.flipped {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .payment {
   text-align: center;
   margin-bottom: 2rem;
+}
+#prices .package-item {
+  justify-content: space-between;
+  padding: 0px 50px;
 }
 
 /*
@@ -124,6 +134,10 @@ PHONE SCREEN
 
 */
 @media (min-width: 370px) and (max-width: 1439px) {
+  .package-container {
+    width: 100%;
+  }
+
   .package {
     width: 95%;
     max-width: 350px;
