@@ -2,10 +2,10 @@ import "./AddOn.css";
 
 function AddOn({ title, sessions, prices }) {
   return (
-    <div className="add-on">
-      <h3 className="add-on-title">{title}</h3>
+    <div className="Add-on">
+      <h3 className="Add-on-title">{title}</h3>
       {prices.map((price, index) => (
-        <div key={index} className="add-on-price">
+        <div key={index} className="Add-on-price">
           <span>
             {sessions[index]} {sessions[index] === 1 ? "Session" : "Sessions"}
           </span>

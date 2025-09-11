@@ -1,6 +1,6 @@
 @import url("../../global.css");
 
-.contact {
+.Contact {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
@@ -11,7 +11,7 @@
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
 }
 
-.contact-icon {
+.Contact-icon {
   width: 50px;
 }
 
@@ -21,15 +21,15 @@ PHONE SCREEN
 
 */
 @media (min-width: 370px) and (max-width: 1439px) {
-  .contact {
+  .Contact {
     width: 100%;
   }
 
-  .contact .icon {
+  .Contact-icon {
     width: 32px;
   }
 
-  .contact .handle {
+  .Contact-handle {
     width: 158px;
 
     font-size: 12px;
@@ -43,15 +43,15 @@ PC SCREEN
 
 */
 @media (min-width: 1440px) {
-  .contact {
+  .Contact {
     width: 50%;
   }
 
-  .contact .icon {
+  .Contact-icon {
     width: 32px;
   }
 
-  .contact .handle {
+  .Contact-handle {
     width: 210px;
 
     font-size: 16px;

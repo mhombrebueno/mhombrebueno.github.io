@@ -1,23 +1,32 @@
-#reviews {
+.Reviews {
   background-image: linear-gradient(
     var(--primary-colour),
     var(--secondary-colour) 99%
   );
 }
 
-#reviews .content {
+.Reviews .Section-content {
   align-items: center;
-  gap: 50px;
+  gap: 25px;
 }
 
+/*
+
+PHONE SCREEN
+
+*/
 @media (min-width: 370px) and (max-width: 1439px) {
-  #reviews .content {
+  .Reviews .Section-content {
     width: 100%;
     flex-direction: column;
     justify-content: center;
   }
+}
 
-  .review {
-    width: 100%;
-  }
+/*
+
+PC SCREEN
+
+*/
+@media (min-width: 1440px) {
 }

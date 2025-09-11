@@ -109,7 +109,6 @@ PHONE SCREEN
 */
 @media (min-width: 370px) and (max-width: 1439px) {
   .certificate {
-    margin-bottom: 150px;
   }
 
   .certificate-frame {

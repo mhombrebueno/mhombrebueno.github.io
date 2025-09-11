@@ -1,49 +1,42 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import "./Review.css";
 
-function Review({ name, numStars, review }) {
+function Review({ name, numStars, text }) {
   const [expanded, setExpanded] = useState(false);
 
-  const isLong = review.length > 1;
-
-  const collapsedState = () => {
-    const firstParagraph = review[0];
-    return (
-      <p className="paragraph">
-        {isLong ? firstParagraph + ".." : firstParagraph}
-      </p>
-    );
-  };
-
-  const expandedState = () => {
-    return review.map((paragraph, index) => (
-      <p className="paragraph" key={index}>
-        {paragraph}
-      </p>
-    ));
-  };
+  // Split text into paraphraphs
+  const paragraphs = text.split("\n").filter((p) => p.trim() !== "");
+  const isLong = paragraphs.length > 1;
 
   return (
-    <div className="review">
-      <h1 className="name">{name}</h1>
-      <h2 className="stars">
-        {Array.from({ length: numStars }).map((_, index) => (
-          <span className="star" key={index}>
-            &#9733;
-          </span>
-        ))}
-        <span className="num-stars">{numStars} / 5</span>
-      </h2>
+    <div className="Review">
+      <div className="Review-profile">
+        <h1 className="Review-name">{name}</h1>
+        <h2 className="Review-stars">
+          {Array.from({ length: numStars }).map(() => (
+            <span className="Review-star">&#9733;</span>
+          ))}
+          <span className="Review-num-stars">{numStars}</span>
+        </h2>
+      </div>
 
-      {expanded ? expandedState() : collapsedState()}
+      <div className="Review-text">
+        {expanded ? (
+          paragraphs.map((paragraph, _) => (
+            <p className="Review-paragraph">{paragraph}</p>
+          ))
+        ) : (
+          <p className="Review-paragraph">{paragraphs[0]}</p>
+        )}
+      </div>
 
       {isLong && (
         <button
-          className="read-more-button"
+          className="Review-read-more-button"
           onClick={() => setExpanded(!expanded)}
         >
-          {expanded ? "Read less" : "Read more"}
+          {expanded ? "read less" : "read more"}
         </button>
       )}
     </div>

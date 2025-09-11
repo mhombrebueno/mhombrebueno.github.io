@@ -1,45 +1,40 @@
-.review {
+.Review {
   background-color: whitesmoke;
   box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.8);
-  border: solid rgba(255, 255, 255, 0.1) 2px;
   border-radius: 5px;
 }
 
-.review .name {
+.Review-name {
   color: black;
   font-size: 18px;
   margin: 0 0 0.2rem 0;
 }
 
-.review .stars {
+.Review-stars {
   flex-direction: row;
-  border-bottom: 1px solid gainsboro;
+  gap: 2px;
 }
 
-.star {
+.Review-star {
   color: goldenrod;
   font-size: 16px;
 }
 
-.num-stars {
+.Review-num-stars {
   font-size: 12px;
   font-weight: 400;
-
   color: grey;
+
   justify-content: center;
 
-  margin-left: 10px;
-  padding-top: 4px;
+  margin-left: 5px;
 }
 
-.review .paragraph {
+.Review-paragraph {
   color: black;
 }
 
-.read-more-button {
-  margin-top: 20px;
-  padding: 5px;
-
+.Review-read-more-button {
   color: black;
   background-color: transparent;
 
@@ -53,16 +48,16 @@ PHONE SCREEN
 
 */
 @media (min-width: 370px) and (max-width: 1439px) {
-  .review {
+  .Review {
     width: 100%;
     padding: 20px 30px;
   }
 
-  .review .paragraph {
-    margin-top: 0.5rem;
+  .Review-text {
+    gap: 0.5rem;
   }
 
-  .review .stars {
+  .Review-stars {
     padding-bottom: 0.4rem;
   }
 }
@@ -73,16 +68,16 @@ PC SCREEN
 
 */
 @media (min-width: 1440px) {
-  .review {
+  .Review {
     width: 700px;
     padding: 30px 40px;
   }
 
-  .review .stars {
-    padding-bottom: 0.8rem;
+  .Review-stars {
+    padding-bottom: 0.4rem;
   }
 
-  .review .paragraph {
-    margin-top: 1rem;
+  .Review-text {
+    gap: 1rem;
   }
 }

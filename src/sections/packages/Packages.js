@@ -9,15 +9,15 @@ import "./Packages.css";
 function Packages(props) {
   return (
     <Section {...props}>
-      <div id="package-ranks">
+      <div className="Package-ranks">
         {PACKAGES.map((pack) => (
           <Package key={pack.id} {...pack} />
         ))}
       </div>
 
-      <div id="add-ons">
-        <h2 className="title">Add Ons</h2>
-        <div className="list">
+      <div className="Add-ons">
+        <h2 className="Add-ons-title">Add Ons</h2>
+        <div className="Add-ons-list">
           {ADD_ONS.map((addOn) => (
             <AddOn key={addOn.id} {...addOn} />
           ))}

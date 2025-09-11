@@ -18,14 +18,18 @@
   background-image: var(--master-gradient);
 }
 
-.package-container {
+.Package-container {
   width: 25%;
   perspective: 1000px;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
 }
 
-.package {
+.Package {
   position: relative;
   height: 550px;
+  width: 100%;
 
   border: 2px solid;
 
@@ -36,14 +40,14 @@
   cursor: pointer;
 }
 
-.package-icon-container {
+.Package-icon-container {
   position: absolute;
   top: 0;
   width: 100%;
   align-items: center;
 }
 
-.package-icon {
+.Package-icon {
   width: 70%;
   opacity: 0.4;
 }
@@ -52,7 +56,7 @@
   color: lightgreen;
 }
 
-.package-title {
+.Package-title {
   font-family: "Cinzel";
   font-size: 40px;
   font-weight: 700;
@@ -66,32 +70,32 @@
   z-index: 1;
 }
 
-.package-header {
+.Package-header {
   font-weight: 600;
   font-size: 16px;
   z-index: 1;
   margin-bottom: 1rem;
 }
 
-.package-item {
+.Package-items {
+  height: 285px;
+  padding: 0px 22px 0px 22px;
+}
+
+.Package-item {
   flex-direction: row;
   font-size: 12px;
   margin-bottom: 1.2rem;
 }
 
-.package-items {
-  height: 285px;
-  padding: 0px 22px 0px 22px;
-}
-
-.package-small-text {
+.Package-tap-to-view {
   text-align: center;
   font-size: 11px;
   margin-top: 20px;
 }
 
-.package-front,
-.package-back {
+.Package-front,
+.Package-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -99,31 +103,42 @@
 
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: translateZ(0); /* helps in some browsers */
+  -webkit-transform: translateZ(0);
+  background: inherit; /* ensure faces are opaque so bleeding doesn't happen */
+  -webkit-font-smoothing: antialiased;
 }
 
-.package-front ul * {
-  padding: 0 22px;
+.Package-item-list {
+  padding: 0 50px;
 }
 
-.package-back {
+.Package-bullet {
+  margin-right: 2rem;
+  color: greenyellow;
+}
+
+.Package-back {
   transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
 }
 
-.package .price {
+.Package-price {
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.package.flipped {
+.Package.flipped {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
 
-.payment {
+.Package-payment {
   text-align: center;
   margin-bottom: 2rem;
 }
-#prices .package-item {
+
+.Package-prices {
   justify-content: space-between;
   padding: 0px 50px;
 }
@@ -134,14 +149,18 @@ PHONE SCREEN
 
 */
 @media (min-width: 370px) and (max-width: 1439px) {
-  .package-container {
+  .Package-container {
     width: 100%;
   }
 
-  .package {
+  .Package {
     width: 95%;
     max-width: 350px;
     margin-bottom: 20vw;
+  }
+
+  .Packages .content {
+    align-items: center;
   }
 }
 
@@ -151,7 +170,7 @@ PC SCREEN
 
 */
 @media (min-width: 1440px) {
-  .package {
+  .Package {
     max-width: 350px;
   }
 }

@@ -1,17 +1,17 @@
 @import url("../../global.css");
 
-#packages {
+.Packages {
   background-image: linear-gradient(
     var(--secondary-colour) 70%,
     var(--primary-colour)
   );
 }
 
-#package-ranks {
+.Package-ranks {
   width: 100%;
 }
 
-#add-ons {
+.Add-ons {
   height: fit-content;
   width: 100%;
   padding: 50px;
@@ -31,11 +31,14 @@ PHONE SCREEN
 
 */
 @media (min-width: 370px) and (max-width: 1439px) {
-  #add-ons .list {
+  .Packages .Section-content {
+    align-items: center;
+  }
+  .Add-ons-list {
     align-items: center;
   }
 
-  #add-ons {
+  .Add-ons {
     max-width: 350px;
   }
 }
@@ -46,7 +49,7 @@ PC SCREEN
 
 */
 @media (min-width: 1440px) {
-  #package-ranks {
+  .Package-ranks {
     position: relative;
     width: 100%;
 
@@ -57,11 +60,11 @@ PC SCREEN
     margin-bottom: 100px;
   }
 
-  #add-ons .title {
+  .Add-ons-title {
     font-family: "cinzel";
   }
 
-  #add-ons .list {
+  .Add-ons-list {
     flex-direction: row;
     justify-content: space-around;
   }

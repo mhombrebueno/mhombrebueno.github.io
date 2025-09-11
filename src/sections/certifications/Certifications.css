@@ -1,9 +1,24 @@
-#certifications {
+.Certifications {
   background-color: var(--secondary-colour);
 }
+/*
 
+PHONE SCREEN
+
+*/
+@media (min-width: 370px) and (max-width: 1439px) {
+  .Certifications .Section-content {
+    gap: 50px;
+  }
+}
+
+/* 
+
+PC SCREEN
+
+*/
 @media (min-width: 1440px) {
-  #certifications .content {
+  .Certifications .Section-content {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

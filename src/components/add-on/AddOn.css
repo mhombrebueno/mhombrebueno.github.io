@@ -1,15 +1,17 @@
-.add-on {
+.Add-on {
   font-size: 14px;
   padding: 0;
+  width: 300px;
 }
 
-.add-on-price {
+.Add-on-price {
   flex-direction: row;
   justify-content: space-between;
+  max-width: 300px;
 }
 
-.add-on-title,
-.add-on-price {
+.Add-on-title,
+.Add-on-price {
   margin-bottom: 10px;
 }
 
@@ -19,7 +21,7 @@ PHONE SCREEN
 
 */
 @media (min-width: 370px) and (max-width: 1439px) {
-  .add-on {
+  .Add-on {
     width: 100%;
     margin-top: 3rem;
   }

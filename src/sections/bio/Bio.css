@@ -1,15 +1,15 @@
 @import url("../../global.css");
 
-#bio {
+.Bio {
   background-color: var(--secondary-colour);
 }
 
-#bio-hero .portrait {
+.Bio-portrait {
   border-radius: 15px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
 }
 
-#bio-hero .name {
+.Bio-name {
   flex-direction: row;
   gap: 1rem;
 
@@ -17,28 +17,44 @@
   margin-bottom: 1rem;
 }
 
-#bio-text .cover.fade-out {
+.Bio-cover {
+  background-color: var(--secondary-colour);
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+
+  text-align: center;
+  align-items: center;
+
+  transition: opacity 1000ms;
+}
+
+.Bio-cover.fade-out {
   opacity: 0;
 }
 
-#bio-text .cover.fade-in {
+.Bio-cover.fade-in {
   opacity: 1;
 }
 
-#bio-text .teaser {
+.Bio-teaser {
   transition: opacity 1000 ease;
 }
 
-#bio .read-more-button {
+.Bio-read-more-button {
   width: 100%;
   padding: 10px 20px;
   color: var(--tertiary-text);
+  background-color: transparent;
+  border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 
-#bio-text {
-  justify-content: space-evenly;
+.Bio-text {
+  position: relative;
+  justify-content: center;
 }
 
 /*
@@ -47,49 +63,36 @@ PHONE SCREEN
 
 */
 @media (min-width: 370px) and (max-width: 1439px) {
-  #bio-hero {
+  .Bio-profile {
     align-items: center;
   }
 
-  #bio-hero .portrait {
+  .Bio-portrait {
     width: 60%;
   }
 
-  #bio-hero .name {
+  .Bio-name {
     margin-top: 2rem;
     margin-bottom: 0;
     font-size: 32px;
   }
 
-  #bio-hero .subtitle {
+  .Bio-subtitle {
     font-size: 12px;
     margin-top: 0.5rem;
     text-align: center;
   }
 
-  #bio-text .cover {
-    position: absolute;
-
-    height: 100%;
-    width: 100%;
-
-    text-align: center;
-    align-items: center;
-
-    background-color: var(--secondary-colour);
-    transition: opacity 1000ms;
-  }
-
-  #bio-text {
+  .Bio-text {
     position: relative;
     align-items: center;
   }
 
-  #bio-text .teaser {
+  .Bio-teaser {
     margin-top: 5rem;
   }
 
-  #bio-text .paragraph {
+  .Bio-paragraph {
     font-size: 16px;
     margin-top: 1rem;
     width: 320px;
@@ -102,56 +105,38 @@ PC SCREEN
 
 */
 @media (min-width: 1440px) {
-  #bio.section {
+  .Bio {
     justify-content: center;
     align-items: center;
   }
 
-  #bio .content {
-    width: fit-content;
-  }
-
-  #bio-hero {
+  .Bio-profile {
     flex-direction: row;
     justify-content: center;
 
-    width: fit-content;
+    width: 100%;
     margin-bottom: 60px;
   }
 
-  #bio-hero .portrait {
+  .Bio-portrait {
     width: 325px;
     margin-right: 100px;
   }
 
-  #bio-hero .subtitle {
+  .Bio-subtitle {
     font-size: 18px;
     margin-top: 1rem;
   }
 
-  #bio-text .cover {
-    position: absolute;
-
-    height: 100%;
-    width: 100%;
-
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--secondary-colour);
-    transition: opacity 1000ms ease;
-  }
-
-  #bio-text {
+  .Bio-text {
     position: relative;
-    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+
+    gap: 100px;
   }
 
-  #bio-text .paragraph {
+  .Bio-paragraph {
     font-size: 16px;
     margin-top: 1.5rem;
     width: 500px;
