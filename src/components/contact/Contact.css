@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 25px;
+  height: 110px;
 
   border-radius: 5px;
   background-color: var(--add-ons);
@@ -12,6 +13,18 @@
 }
 
 .Contact-icon {
+  width: 50px;
+}
+
+#calendly {
+  width: 40px;
+}
+
+#email {
+  width: 35px;
+}
+
+#tiktok {
   width: 50px;
 }
 

@@ -1,10 +1,10 @@
 import "./Contact.css";
 
-function Contact({ id, icon, handle, link, mailto }) {
+function Contact({ id, icon, text, link, mailto }) {
   return (
     <a className="Contact" href={link} target="_blank" rel="noreferror">
-      <img className="Contact-icon" src={icon} alt={id} />
-      <span className="Contact-handle">{handle}</span>
+      <img id={id} className="Contact-icon" src={icon} alt={id} />
+      <span className="Contact-handle">{text}</span>
     </a>
   );
 }

@@ -41,8 +41,9 @@ function Bio(props) {
         {visible && (
           <div className={`Bio-cover ${faded ? "fade-out" : "fade-in"}`}>
             <p className="Bio-teaser">
-              I am a UBC Kinesiology Graduate, Competitive Powerlifter,
-              Certified Personal Trainer. But I didn’t start here...
+              I am a UBC Kinesiology Graduate, Certified Personal Trainer,
+              Competetive Powerlifter and Calisthenics Athlete. But I didn’t
+              start here...
             </p>
             <button className="Bio-read-more-button" onClick={handleClick}>
               Read More

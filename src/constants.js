@@ -125,21 +125,27 @@ export const ADD_ONS = [
 
 export const CONTACTS = [
   {
+    id: "calendly",
+    icon: "/icons/calendar.png",
+    text: "1 on 1 Coaching Consultation",
+    link: "https://calendly.com/ignitefitness-mh/nutrition-consultation",
+  },
+  {
     id: "email",
     icon: "/icons/email.png",
-    handle: "ignitefitness.mh@yahoo.com",
+    text: "ignitefitness.mh@yahoo.com",
     link: "mailto:ignitefitness.mh@yahoo.com",
   },
   {
     id: "instagram",
     icon: "/icons/instagram.png",
-    handle: "ignite.fitness.mh",
+    text: "ignite.fitness.mh",
     link: `https://www.instagram.com/ignite.fitness.mh`,
   },
   {
     id: "tiktok",
     icon: "/icons/tiktok.png",
-    handle: "ignite.fitness.mh",
+    text: "ignite.fitness.mh",
     link: "https://www.tiktok.com/@ignite.fitness.mh",
   },
 ];
