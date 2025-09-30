@@ -3,30 +3,25 @@
 .Contact {
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 25px;
-  height: 110px;
+  padding: 30px;
 
-  border-radius: 5px;
-  background-color: var(--add-ons);
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+  justify-content: center;
+
+  gap: 50px;
+
+  border-radius: 20px;
+  border: solid 2px rgba(255,255,255,0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.Contact:hover {
+  border-color: var(--tertiary-text);
 }
 
 .Contact-icon {
-  width: 50px;
+  filter: invert(1);
 }
 
-#calendly {
-  width: 40px;
-}
-
-#email {
-  width: 35px;
-}
-
-#tiktok {
-  width: 50px;
-}
 
 /*
 
@@ -61,12 +56,11 @@ PC SCREEN
   }
 
   .Contact-icon {
-    width: 32px;
+    width: 40px;
   }
 
   .Contact-handle {
-    width: 210px;
-
+    width: 250px;
     font-size: 16px;
     text-align: center;
   }
