@@ -55,6 +55,7 @@ function Package({ id, title, icon, rewards, payment, durations, prices }) {
       {TapToView}
     </div>
   );
+
   const PackageBack = (
     <div className="Package-back">
       {Icon}
@@ -63,6 +64,7 @@ function Package({ id, title, icon, rewards, payment, durations, prices }) {
       {TapToView}
     </div>
   );
+
   return (
     <div className="Package-container">
       <div

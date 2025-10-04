@@ -52,8 +52,9 @@ function Bio(props) {
         )}
         <div>
           <p className="Bio-paragraph">
-            I am a UBC Kinesiology Graduate, Competitive Powerlifter, Certified
-            Personal Trainer. But I didn’t start here...
+            I am a UBC Kinesiology Graduate, Certified Personal Trainer,
+            Competetive Powerlifter and Calisthenics Athlete. But I didn’t start
+            here...
           </p>
           <p className="Bio-paragraph">
             As one of the shortest guys in the room, I struggled with confidence
