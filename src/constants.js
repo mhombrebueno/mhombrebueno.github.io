@@ -63,8 +63,8 @@ export const PACKAGES = [
       "Weekly Check-ins",
     ],
     payment: "Monthly Payments",
-    durations: ["1 Month", "2 Months"],
-    prices: [300, 550],
+    durations: ["3 Months", "6 Months", "12 Months"],
+    prices: [1000, 1850, 3250],
   },
   {
     id: "diamond-package",
@@ -81,7 +81,7 @@ export const PACKAGES = [
     ],
     payment: "Paid in Full",
     durations: ["6 Sessions", "12 Sessions", "24 Sessions"],
-    prices: [510, 960, 1800],
+    prices: [570, 1080, 2040],
   },
   {
     id: "master-package",
@@ -98,7 +98,7 @@ export const PACKAGES = [
     ],
     payment: "Weekly Payments",
     durations: ["1x per week", "2x per week", "3x per week", "4x per week"],
-    prices: [90, 170, 240, 300],
+    prices: [95, 180, 255, 320],
   },
 ];
 
