@@ -1,6 +1,11 @@
 .Certifications {
   background-color: var(--secondary-colour);
 }
+
+.Certifications .Section-content {
+  justify-content: space-between;
+  gap: 50px;
+}
 /*
 
 PHONE SCREEN

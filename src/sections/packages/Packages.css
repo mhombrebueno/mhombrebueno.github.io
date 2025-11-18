@@ -19,8 +19,7 @@
   justify-content: space-evenly;
   text-align: center;
 
-  border: 2px solid #382c1b;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: var(--add-ons);
 }
 

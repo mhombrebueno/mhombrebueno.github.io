@@ -1,22 +1,6 @@
-.certificate {
+.Certificate {
   align-items: center;
-}
-
-.certificate-title {
-  font-size: 16px;
-  margin-top: 2rem;
-  font-weight: 500;
-}
-
-.certificate-frame {
-  position: relative;
-  border: solid 30px #45321d;
-  padding: 20px;
-  background-color: white;
-
-  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.8);
-
-  transition: opacity 0.3s ease;
+  border-radius: 20px;
 }
 
 .view-button {
@@ -86,8 +70,9 @@
 }
 
 .certificate-img {
-  width: 450px;
+  width: 100%;
   border: solid 1px grey;
+  border-radius: 20px;
 }
 
 /*
@@ -96,9 +81,8 @@ PC SCREEN
 
 */
 @media (min-width: 1440px) {
-  .certificate {
-    width: 50%;
-    margin-bottom: 350px;
+  .Certificate {
+    width: 35%;
   }
 }
 
@@ -109,15 +93,5 @@ PHONE SCREEN
 */
 @media (min-width: 370px) and (max-width: 1439px) {
   .certificate {
-  }
-
-  .certificate-frame {
-    border: solid 20px #45321d;
-  }
-
-  .certificate-img {
-    width: 100%;
-    padding: 0;
-    border: none;
   }
 }

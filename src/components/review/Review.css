@@ -1,7 +1,6 @@
 .Review {
   background-color: whitesmoke;
-  box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .Review-name {

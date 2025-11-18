@@ -1,6 +1,6 @@
 :root {
   /* SITE COLOURS */
-  --primary-colour: #041b29;
+  --primary-colour: #141414;
   --secondary-colour: #141414;
   --tertiary-colour: white;
 
@@ -106,7 +106,7 @@ PC SCREEN
 */
 @media (min-width: 1440px) {
   section {
-    padding: 200px 50px;
+    padding: 100px 50px;
   }
 
   .Section-title {

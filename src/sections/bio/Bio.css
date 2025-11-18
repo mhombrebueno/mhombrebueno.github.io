@@ -5,8 +5,7 @@
 }
 
 .Bio-portrait {
-  border-radius: 15px;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
 }
 
 .Bio-name {
@@ -40,6 +39,7 @@
 
 .Bio-teaser {
   transition: opacity 1000 ease;
+  width: 1000px;
 }
 
 .Bio-read-more-button {
@@ -90,6 +90,7 @@ PHONE SCREEN
 
   .Bio-teaser {
     margin-top: 5rem;
+    width: 100%;
   }
 
   .Bio-paragraph {
@@ -119,26 +120,24 @@ PC SCREEN
   }
 
   .Bio-portrait {
-    width: 325px;
-    margin-right: 100px;
+    width: 250px;
+    margin-right: 50px;
   }
 
   .Bio-subtitle {
     font-size: 18px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   .Bio-text {
     position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    gap: 100px;
+    justify-content: center;
+    align-items: center;
   }
 
   .Bio-paragraph {
     font-size: 16px;
-    margin-top: 1.5rem;
-    width: 500px;
+    margin-bottom: 0.8rem;
+    width: 1000px;
   }
 }

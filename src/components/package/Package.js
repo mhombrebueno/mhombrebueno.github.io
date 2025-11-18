@@ -2,24 +2,30 @@ import { useState } from "react";
 
 import "./Package.css";
 
-function Package({ id, title, icon, rewards, payment, durations, prices }) {
+function Package({
+  id,
+  title,
+  icon,
+  rewards: deliverables,
+  num_months_duration,
+  prices,
+}) {
   const [flipped, setFlipped] = useState(false);
 
-  const Icon = (
+  const Icon_Title = (
     <div className="Package-icon-container">
       <img className="Package-icon" alt={title} src={icon} />
+      <h1 className="Package-title">{title}</h1>
     </div>
   );
 
-  const Title = <h1 className="Package-title">{title}</h1>;
-
-  const Rewards = (
+  const Deliverables = (
     <div className="Package-items">
-      <h2 className="Package-header">Rewards</h2>
-      <ul className="Package-item-list">
-        {rewards.map((reward, index) => (
-          <li key={index} className="Package-item">
-            <span className="Package-bullet">+</span> {reward}
+      <h2 className="Package-header">Deliverables</h2>
+      <ul className="Package-deliverables">
+        {deliverables.map((deliverable, index) => (
+          <li key={index} className="Package-deliverable">
+            {deliverable}
           </li>
         ))}
       </ul>
@@ -28,52 +34,49 @@ function Package({ id, title, icon, rewards, payment, durations, prices }) {
 
   const Prices = (
     <div className="Package-items">
-      <div className="Package-payment">{payment}</div>
       <h2 className="Package-header">Prices</h2>
-      <ul className="Package-item-list">
-        {durations.map((duration, index) => (
-          <li key={index} className="Package-price Package-item">
-            <div>{duration}</div>
-            <div>${prices[index]}</div>
-          </li>
+      <div className="Package-prices">
+        {prices.map((price, index) => (
+          <div className="Package-price">
+            <div className="Package-price-value">${price.price} CAD</div>
+            {price.payments === 1 ? (
+              <div>paid in full</div>
+            ) : (
+              <div>
+                ${Math.trunc(price.price / price.payments)} x {price.payments}{" "}
+                payments
+              </div>
+            )}
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 
-  const TapToView = (
-    <span className="Package-tap-to-view">{`${
-      flipped ? "Tap to view Rewards" : "Tap to view Prices"
-    }`}</span>
-  );
-
-  const PackageFront = (
-    <div className="Package-front">
-      {Icon}
-      {Title}
-      {Rewards}
-      {TapToView}
-    </div>
-  );
-
-  const PackageBack = (
-    <div className="Package-back">
-      {Icon}
-      {Title}
-      {Prices}
-      {TapToView}
+  const Duration = (
+    <div>
+      <div className="Package-items">
+        <h2 className="Package-header">Duration</h2>
+        <div className="Package-duration">{num_months_duration} months</div>
+      </div>
     </div>
   );
 
   return (
     <div className="Package-container">
-      <div
+      <div id={id} className="Package">
+        {Icon_Title}
+        {Duration}
+        {Deliverables}
+        {Prices}
+      </div>
+      {/* <div
         id={id}
         className={`Package ${flipped ? "flipped" : ""}`}
         onClick={() => setFlipped(!flipped)}
       >
         {PackageFront} {PackageBack}
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -1,14 +1,14 @@
 import "./Certifications.css";
 import Section from "../Section";
 
-import Certificate from "../../components/certification/Certification";
+import Certificate from "../../components/certification/Certificate";
 import { CERTIFICATIONS } from "../../constants";
 
 function Certifications(props) {
   return (
     <Section {...props}>
-      {CERTIFICATIONS.map((certification) => (
-        <Certificate {...certification} />
+      {CERTIFICATIONS.map((certificate) => (
+        <Certificate {...certificate} />
       ))}
     </Section>
   );

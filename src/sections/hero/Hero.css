@@ -8,6 +8,14 @@
   background-repeat: no-repeat;
 }
 
+.Hero-panel {
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+}
+
 /*
 
 PHONE SCREEN
@@ -22,13 +30,8 @@ PHONE SCREEN
   }
 
   .Hero-panel {
-    width: 100%;
     padding: 50px;
     z-index: 1;
-
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-    backdrop-filter: blur(2px);
   }
 
   .Hero-welcome {
@@ -60,12 +63,7 @@ PC SCREEN
   }
 
   .Hero-panel {
-    width: 100%;
     padding: 75px;
-
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-    backdrop-filter: blur(2px);
   }
 
   .Hero-welcome {

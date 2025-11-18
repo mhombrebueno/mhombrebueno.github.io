@@ -19,36 +19,29 @@
 }
 
 .Package-container {
-  width: 25%;
-  perspective: 1000px;
+  width: 500px;
   justify-content: center;
   align-items: center;
-  backface-visibility: hidden;
 }
 
 .Package {
-  position: relative;
-  height: 700px;
-  width: 100%;
-
   border: 2px solid;
-
-  transition: transform 1500ms;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
-
-  cursor: pointer;
+  border-radius: 20px;
+  justify-content: center;
+  gap: 20px;
+  max-width: 500px;
 }
 
 .Package-icon-container {
-  position: absolute;
-  top: 0;
-  width: 100%;
   align-items: center;
+  justify-content: end;
+
+  height: 200px;
 }
 
 .Package-icon {
-  width: 70%;
+  position: absolute;
+  width: 200px;
   opacity: 0.4;
 }
 
@@ -58,34 +51,33 @@
 
 .Package-title {
   font-family: "Cinzel";
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
+  font-size: 52px;
   color: var(--secondary-text);
-  text-transform: uppercase;
-
-  margin-top: 100px;
-  margin-bottom: 1rem;
 
   z-index: 1;
 }
 
 .Package-header {
-  font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
+  opacity: 0.6;
+  font-weight: lighter;
   z-index: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .Package-items {
-  height: 285px;
-  padding: 0px 22px 0px 22px;
+  padding: 10px 22px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .Package-item {
   flex-direction: row;
-  font-size: 12px;
+  align-items: center;
+  font-size: 14px;
   margin-bottom: 1.2rem;
+  width: 50%;
 }
 
 .Package-tap-to-view {
@@ -113,6 +105,9 @@
 
 .Package-item-list {
   padding: 0 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .Package-bullet {
@@ -124,14 +119,20 @@
   transform: rotateY(180deg);
 }
 
-.Package-price {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .Package.flipped {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
+}
+
+.Package-deliverables {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Package-deliverable {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .Package-payment {
@@ -140,8 +141,32 @@
 }
 
 .Package-prices {
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 0px 50px;
+}
+
+.Package-price {
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 50%;
+  font-size: 12px;
+}
+
+.Package-price-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Package-duration {
+  padding: 0px 50px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 /*
@@ -155,9 +180,12 @@ PHONE SCREEN
   }
 
   .Package {
-    width: 95%;
-    max-width: 350px;
+    width: 100%;
     margin-bottom: 20vw;
+  }
+
+  .Package-prices {
+    padding: 0;
   }
 
   .Packages .content {
@@ -171,7 +199,4 @@ PC SCREEN
 
 */
 @media (min-width: 1440px) {
-  .Package {
-    max-width: 350px;
-  }
 }

@@ -20,7 +20,7 @@
 }
 
 #navbar a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
 }
 /*
 
@@ -62,11 +62,10 @@ PC SCREEN
   #navbar .buttons {
     gap: 50px;
     flex-direction: row;
-    font-size: 20px;
-    font-weight: bolder;
+    font-size: 16px;
   }
 
   #navbar .business-name {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
