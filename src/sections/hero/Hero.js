@@ -1,5 +1,7 @@
 import Section from "../Section";
 
+import ReactPlayer from "react-player";
+
 import "../../global.css";
 import "./Hero.css";
 
@@ -11,6 +13,10 @@ function Hero(props) {
         <h1 className="Hero-name">
           <span className="highlighted-text">Ignite</span> Fitness
         </h1>
+        <ReactPlayer
+          url="https://www.youtube.com/watch?v=ZnWdHE5PR8k"
+          controls
+        />
       </div>
     </Section>
   );

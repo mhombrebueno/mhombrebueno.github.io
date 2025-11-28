@@ -70,7 +70,7 @@ export const PACKAGES = [
     id: "diamond-package",
     title: "Diamond",
     icon: "/imgs/ranks/diamond-rank.webp",
-    rewards: [
+    deliverables: [
       "Mindset Mastery",
       "Traning Plan",
       "Nutrition Plan",
@@ -89,7 +89,7 @@ export const PACKAGES = [
     id: "master-package",
     title: "Master",
     icon: "/imgs/ranks/master-rank.webp",
-    rewards: [
+    deliverables: [
       "Mindset Mastery",
       "Traning Plan",
       "Nutrition Plan",
@@ -132,7 +132,7 @@ export const CONTACTS = [
     id: "calendly",
     icon: "/icons/calendly.svg",
     text: "Book Coaching Consultation",
-    link: "https://calendly.com/ignitefitness-mh/new-client-consultation",
+    link: "https://calendly.com/ignitefitness-mh/30-minute-strategy-call",
   },
   {
     id: "email",

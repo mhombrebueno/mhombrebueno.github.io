@@ -20,7 +20,7 @@
   text-align: center;
 
   border-radius: 20px;
-  background-color: var(--add-ons);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /*
