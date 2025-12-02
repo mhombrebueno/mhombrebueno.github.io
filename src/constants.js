@@ -131,8 +131,8 @@ export const CONTACTS = [
   {
     id: "calendly",
     icon: "/icons/calendly.svg",
-    text: "Book Coaching Consultation",
-    link: "https://calendly.com/ignitefitness-mh/new-client-consultation",
+    text: "Strategy Call",
+    link: "https://calendly.com/ignitefitness-mh/45-minute-strategy-call",
   },
   {
     id: "email",
