@@ -4,6 +4,7 @@ import Packages from "./sections/packages/Packages";
 import Contacts from "./sections/contacts/Contacts";
 import Reviews from "./sections/reviews/Reviews";
 import Certifications from "./sections/certifications/Certifications";
+import Video from "./sections/video/Video";
 
 export const BUSINESS_NAME = "Ignite Fitness";
 
@@ -17,6 +18,11 @@ export const SECTIONS = [
     component: Bio,
     id: "Bio",
     title: "Bio",
+  },
+  {
+    component: Video,
+    id: "Video",
+    title: "My Program",
   },
   {
     component: Packages,
