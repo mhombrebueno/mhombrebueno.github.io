@@ -57,6 +57,23 @@
   justify-content: center;
 }
 
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px; /* upper limit if you want */
+  aspect-ratio: 16 / 9;
+  margin: 0 auto; /* center it */
+}
+
+.video iframe {
+  margin-top: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 /*
 
 PHONE SCREEN
@@ -97,6 +114,11 @@ PHONE SCREEN
     font-size: 16px;
     margin-top: 1rem;
     width: 320px;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
   }
 }
 

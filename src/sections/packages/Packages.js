@@ -14,7 +14,7 @@ function Packages(props) {
           <Package key={pack.id} {...pack} />
         ))}
       </div>
-
+      {/* 
       <div className="Add-ons">
         <h2 className="Add-ons-title">Add Ons</h2>
         <div className="Add-ons-list">
@@ -22,7 +22,7 @@ function Packages(props) {
             <AddOn key={addOn.id} {...addOn} />
           ))}
         </div>
-      </div>
+      </div> */}
       <PriceCalculator />
     </Section>
   );

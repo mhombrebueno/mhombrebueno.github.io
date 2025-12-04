@@ -6,12 +6,10 @@ function Package({
   id,
   title,
   icon,
-  rewards: deliverables,
+  deliverables,
   num_months_duration,
   prices,
 }) {
-  const [flipped, setFlipped] = useState(false);
-
   const Icon_Title = (
     <div className="Package-icon-container">
       <img className="Package-icon" alt={title} src={icon} />
@@ -68,15 +66,7 @@ function Package({
         {Icon_Title}
         {Duration}
         {Deliverables}
-        {Prices}
       </div>
-      {/* <div
-        id={id}
-        className={`Package ${flipped ? "flipped" : ""}`}
-        onClick={() => setFlipped(!flipped)}
-      >
-        {PackageFront} {PackageBack}
-      </div> */}
     </div>
   );
 }
