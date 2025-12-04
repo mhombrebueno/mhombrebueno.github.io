@@ -1,4 +1,5 @@
 import Section from "../Section";
+import YouTube from "react-youtube";
 import { useState } from "react";
 
 import "./Bio.css";
@@ -18,6 +19,8 @@ function Bio(props) {
       setFaded(false);
     }
   };
+
+  const videoId = "ZnWdHE5PR8k";
 
   return (
     <Section {...props}>
@@ -86,6 +89,9 @@ function Bio(props) {
         <button className="Bio-read-more-button" onClick={handleClick}>
           Read Less
         </button>
+      </div>
+      <div className="video-wrapper">
+        <YouTube className="video" videoId={videoId} />
       </div>
     </Section>
   );
