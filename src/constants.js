@@ -19,11 +19,6 @@ export const SECTIONS = [
     title: "Bio",
   },
   {
-    component: Packages,
-    id: "Packages",
-    title: "Packages",
-  },
-  {
     component: Contacts,
     id: "Contacts",
     title: "Contacts",
